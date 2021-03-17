@@ -1,0 +1,116 @@
+/*================================================================/*
+Theme Name: FirePandaDelivery
+Theme URI: https://github.com/FirePanda-Delivery
+Author: группа FirePandaDelivery
+Description: Индивидуальный шаблон разработан для для компании <a href="#">FirePandaDelivery</a>.
+/*================================================================*/
+
+/* CSS переменные */
+:root {
+    /*Цвета*/
+    --black: #000000;
+    --white: #ffffff;
+    --red: #A01B16;
+    --dark-red: #400B09;
+    --orange: #EA5B0C;
+    --light-gray: #C6C6C6;
+    --gray: #6F6F6F;
+
+    /*Руководство по стилям*/
+    --title-color: var(--black);
+    --title-color-white: var(--white);
+    --descr-color: var(--black);
+    --descr-color-white: var(--white);
+
+    --title-font: Montserrat;
+    --descr-font: Montserrat;
+
+    --title-fs: 21px;
+    --title-lh: 34px;
+
+    --descr-fs: 16px;
+    --descr-lh: 26px;
+
+}
+
+/* CSS стили */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+p {
+    font-family: var(--title-font);
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    color: var(--black);
+}
+
+.container {
+    max-width: 1290px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/*медиазапросы*/
+
+@media (max-width: 1330px) {
+    .container {
+        max-width: 1290px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin: auto;
+    }
+}
+/*desktop 1024px*/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 940px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: auto;
+    }
+}
+/*tablet*/
+@media (max-width: 992px) {
+    .container {
+        max-width: 940px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: auto;
+    }
+}
+/*mobile*/
+@media (max-width: 767px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
