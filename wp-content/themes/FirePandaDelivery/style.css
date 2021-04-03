@@ -10,11 +10,9 @@ Description: Индивидуальный шаблон разработан дл
     /*Цвета*/
     --black: #000000;
     --white: #ffffff;
-    --red: #A01B16;
-    --dark-red: #400B09;
+    --red: #900C0C;
+    --dark-red: #800606;
     --orange: #EA5B0C;
-    --light-gray: #C6C6C6;
-    --gray: #6F6F6F;
 
     /*Руководство по стилям*/
     --title-color: var(--black);
@@ -117,8 +115,12 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0;
+    align-items: center;
 
+}
+.logo > img {
+    width: 230px;
 }
 
 .header-top-block {
@@ -127,7 +129,7 @@ h4 {
     padding: 10px 0;
 }
 
-.header-top-block > a> img {
+.header-top-block > a > img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
@@ -176,12 +178,9 @@ h4 {
     color: var(--orange);
     border-color: var(--orange);
 }
-.search-block-eat {
-
-}
 .search-block {
     border: 1px solid var(--white);
-    padding: 10px 10px;
+    padding: 10px;
     color: var(--white);
     width: 100%;
     background: transparent;
@@ -192,7 +191,7 @@ h4 {
 }
 .search-block-popup {
     border: 1px solid var(--black);
-    padding: 10px 10px;
+    padding: 10px;
     color: var(--black);
     width: 100%;
     background: transparent;
@@ -238,12 +237,12 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 15px 15px 15px;
+    padding: 0 15px 15px;
     color: var(--red);
     font-weight: bold;
 }
 
-.marker{
+.marker {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -266,8 +265,8 @@ h4 {
 }
 
 .popup {
-    margin: 87px auto 70px auto;
-    padding: 27px 20px 20px 20px;
+    margin: 87px auto 70px;
+    padding: 27px 20px 20px;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -350,7 +349,7 @@ h4 {
 }
 footer {
     background-color: var(--black);
-    padding: 60px 0px 10px 0px;
+    padding: 60px 0 10px;
 }
 .footer-top-block {
     color: var(--white);
@@ -358,6 +357,9 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+}
+.footer-top-block .logo > img {
+    width: 130px;
 }
 .footer-information {
     display: flex;
@@ -387,7 +389,7 @@ footer h6 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.footer-about  ul > li {
+.footer-about ul > li {
     margin-bottom: 10px;
 }
 .footer-bottom-block {
@@ -395,7 +397,7 @@ footer h6 {
     border-top: 1px solid var(--white);
     display: flex;
     justify-content: space-between;
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0 50px;
 }
 .social-links i {
     width: 30px;
@@ -404,18 +406,21 @@ footer h6 {
     color: var(--red);
 }
 
-
-p#see-more{
+p#see-more {
     cursor: pointer;
 }
 
 p#hide-blocks {
     cursor: pointer;
 }
-
-
-
-
+.contacts {
+    background-color: var(--black);
+}
+.contacts-block-information {
+    background-color: var(--white);
+    padding: 30px;
+    margin-top: 30px;
+}
 
 
 
@@ -466,3 +471,5 @@ p#hide-blocks {
         justify-content: center;
     }
 }
+
+

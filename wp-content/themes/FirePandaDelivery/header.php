@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c80bbf73-9f4a-4ac4-8f69-9b863ed3bb94" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c80bbf73-9f4a-4ac4-8f69-9b863ed3bb94"
+        type="text/javascript"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -18,13 +19,15 @@
         <div class="header-top">
             <div class="container">
                 <div class="header-top-block">
-                    <a class="marker" href="#popup1"><img src="<?php echo get_template_directory_uri(); ?>/img/marker.png" alt="marker"></a>
+                    <a class="marker" href="#popup1"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/marker.png" alt="marker"></a>
 
                     <input type="text" class="search-block" id="search" placeholder="Укажите адрес доставки">
 
                     <div id="popup1" class="overlay">
                         <div class="popup">
-                            <input type="text" class="search-block-popup" id="search-block-popup" placeholder="Укажите адрес доставки">
+                            <input type="text" class="search-block-popup" id="search-block-popup"
+                                placeholder="Укажите адрес доставки">
                             <div class="popup-map" id="popup-map">
                                 <div id="map"></div>
                             </div>
@@ -37,7 +40,8 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-block">
-                    <div class="logo"><img src="" alt="logo"></div>
+                    <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.png"
+                            alt="logo"></div>
                     <div class="btn-login">Войти</div>
                 </div>
 

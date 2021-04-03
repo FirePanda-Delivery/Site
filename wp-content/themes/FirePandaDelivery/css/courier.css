@@ -1,0 +1,211 @@
+
+.for-couriers,
+.for-restaurants,
+.support-service {
+    line-height: 26px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--red);
+}
+.courier {
+    background-image: url("../img/courier-1.jpg");
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.for-couriers {
+    border-bottom: none;
+}
+.contacts-title {
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.support-service span {
+    font-weight: bold;
+}
+.contacts-block {
+    padding-top: 100px;
+}
+.for-couriers > .contacts-title,
+.for-restaurants {
+    margin-top: 30px;
+}
+.for-couriers > span,
+.for-restaurants > span {
+    color: var(--red);
+}
+.courier-menu {
+    display: flex;
+    font-weight: bold;
+}
+.courier-menu li {
+    margin-left: 40px;
+}
+.courier-block {
+    padding-top: 100px;
+}
+.courier-block a {
+    margin-top: 40px;
+}
+.courier {
+    height: 500px;
+}
+.btn-courier {
+    width: 200px;
+}
+.courier-become {
+    background-color: var(--black);
+}
+.courier-number {
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+}
+.courier-become-item div {
+    color: var(--white);
+    align-items: center;
+    margin-bottom: 15px;
+}
+.courier-become-items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.courier-become-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    text-align: center;
+}
+.courier-become-block {
+    padding-top: 100px;
+}
+.courier-advantages-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin: auto;
+}
+.courier-advantages-item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 40px;
+}
+.courier-advantages-item div {
+    width: 175px;
+}
+.courier-advantages-block h2 {
+    color: var(--black);
+}
+.courier-advantages-block {
+    padding: 100px 0;
+}
+.courier-advantages-item > i {
+    margin-bottom: 30px;
+}
+.courier-questions-title  {
+    color: var(--black);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.courier-block-questions {
+    padding-bottom: 100px;
+}
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid var(--red);
+}
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+.accordion button:focus,
+.accordion button:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+.accordion button:focus::after,
+.accordion button:hover::after {
+    cursor: pointer;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+    color: var(--red);
+}
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
