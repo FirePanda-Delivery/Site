@@ -1,4 +1,3 @@
-
 .for-couriers,
 .for-restaurants,
 .support-service {
@@ -6,6 +5,7 @@
     padding-bottom: 50px;
     border-bottom: 1px solid var(--red);
 }
+
 .courier {
     background-image: url("../img/courier-1.jpg");
     width: 100%;
@@ -15,71 +15,93 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .for-couriers {
     border-bottom: none;
 }
+
 .contacts-title {
     font-weight: bold;
     font-size: 21px;
     margin-bottom: 20px;
 }
+
 .support-service span {
     font-weight: bold;
 }
+
 .contacts-block {
     padding-top: 100px;
 }
-.for-couriers > .contacts-title,
+
+.for-couriers>.contacts-title,
 .for-restaurants {
     margin-top: 30px;
 }
-.for-couriers > span,
-.for-restaurants > span {
+
+.for-couriers>span,
+.for-restaurants>span {
     color: var(--red);
 }
+
 .courier-menu {
     display: flex;
     font-weight: bold;
 }
+
 .courier-menu li {
     margin-left: 40px;
 }
+
 .courier-menu li:hover {
-   color: var(--red);
+    color: var(--red);
 }
+
 .courier-block {
     padding-top: 160px;
 }
+
 .courier-block a {
     margin-top: 40px;
 }
+
 .courier {
     height: 500px;
 }
+
 .btn-courier {
     width: 200px;
     margin: 0 auto;
 }
+
+.btn-courier a:hover {
+    background-color: var(--dark-red);
+}
+
 .courier-become {
     background-color: var(--light-black);
 }
+
 .courier-number {
     font-weight: bold;
     font-size: 70px;
     letter-spacing: 0.05em;
     color: var(--white);
 }
+
 .courier-become-item div {
     color: var(--white);
     align-items: center;
     margin-bottom: 15px;
 }
+
 .courier-become-items {
     display: flex;
     justify-content: space-around;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .courier-become-item {
     display: flex;
     flex-direction: column;
@@ -87,9 +109,11 @@
     width: 160px;
     text-align: center;
 }
+
 .courier-become-block {
-    padding-top:60px;
+    padding-top: 60px;
 }
+
 .courier-advantages-items {
     display: flex;
     justify-content: center;
@@ -98,6 +122,7 @@
     padding-top: 60px;
     margin: auto;
 }
+
 .courier-advantages-item {
     flex-direction: column;
     display: flex;
@@ -107,36 +132,46 @@
     width: 30%;
     margin-bottom: 40px;
 }
+
 .courier-advantages-item div {
     width: 175px;
 }
+
 .courier-advantages-block h2 {
     color: var(--light-black);
 }
+
 .courier-advantages-block {
-    padding: 40px 0;
+    padding: 60px 0 40px 0;
 }
-.courier-advantages-item > i {
+
+.courier-advantages-item>i {
     margin-bottom: 30px;
 }
-.courier-questions-title  {
+
+.courier-questions-title {
     color: var(--light-black);
     padding-top: 60px;
     padding-bottom: 30px;
 }
+
 .courier-block-questions {
     padding-bottom: 100px;
 }
+
 .courier-block h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;
 }
+
 .accordion .accordion-item button[aria-expanded='true'] {
     border-bottom: 1px solid var(--red);
 }
+
 .accordion button {
     position: relative;
     display: block;
@@ -149,20 +184,24 @@
     background: none;
     outline: none;
 }
+
 .accordion button:focus,
 .accordion button:hover {
     cursor: pointer;
     color: var(--red);
 }
+
 .accordion button:focus::after,
 .accordion button:hover::after {
     cursor: pointer;
     color: var(--red);
     border: 1px solid var(--red);
 }
+
 .accordion button .accordion-title {
     padding: 1em 1.5em 1em 0;
 }
+
 .accordion button .icon {
     display: inline-block;
     position: absolute;
@@ -173,6 +212,7 @@
     border: 1px solid;
     border-radius: 22px;
 }
+
 .accordion button .icon::before {
     display: block;
     position: absolute;
@@ -183,6 +223,7 @@
     height: 2px;
     background: currentColor;
 }
+
 .accordion button .icon::after {
     display: block;
     position: absolute;
@@ -193,18 +234,22 @@
     height: 10px;
     background: currentColor;
 }
+
 .accordion button[aria-expanded='true'] {
     color: var(--red);
 }
+
 .accordion button[aria-expanded='true'] .icon::after {
     width: 0;
 }
-.accordion button[aria-expanded='true'] + .accordion-content {
+
+.accordion button[aria-expanded='true']+.accordion-content {
     opacity: 1;
     max-height: 9em;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 }
+
 .accordion .accordion-content {
     opacity: 0;
     max-height: 0;
@@ -212,8 +257,116 @@
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
 }
+
 .accordion .accordion-content p {
     font-size: 1rem;
     font-weight: 300;
     margin: 2em 0;
+}
+
+.courier-block-form {
+    width: 40%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.courier-block-form h3 {
+    text-align: center;
+}
+
+#contact input {
+    font-size: inherit;
+}
+
+.input-checkbox {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.courier-form {
+    background-image: url("../img/courier-1.jpg");
+    width: 100%;
+    height: 535px;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.policy-label a:hover {
+    color: var(--red);
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--red);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: var(--dark-red);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
 }

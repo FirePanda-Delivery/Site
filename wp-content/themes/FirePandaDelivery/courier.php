@@ -55,8 +55,7 @@
         <div class="container">
             <div class="courier-block">
                 <h2>СТАНЬ КУРЬЕРОМ</br> ПО ДОСТАВКЕ ЕДЫ</h2>
-                <a href="#" class="btn-login btn-courier">Стать курьером</a>
-
+                <a href="#кнопка" class="btn-login btn-courier active">Стать курьером</a>
             </div>
         </div>
     </section>
@@ -115,8 +114,37 @@
         </div>
     </section>
     <section class="courier-form">
+        <a name="1"></a>
         <div class="container">
-            <div class="courier-block-form">
+            <div class="courier-block-form" id="кнопка">
+                <form id="contact" action="" method="post">
+                    <h3>Заполните форму и с вами скоро свяжутся</h3>
+                    <fieldset>
+                        <input placeholder="Ваше имя" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш email" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш номер телефона" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш город" type="text" tabindex="4" required>
+                    </fieldset>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="policy" id="policy" class="policy">
+                        <label for="policy" class="policy-label">
+                            Я принимаю условия <a href="#" target="_blank">Пользовательского
+                                соглашения</a>
+                        </label>
+                    </div>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit"
+                            data-submit="...Sending">отправить</button>
+                    </fieldset>
+                </form>
+
+
             </div>
         </div>
     </section>

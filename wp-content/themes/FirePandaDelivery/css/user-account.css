@@ -1,0 +1,42 @@
+.user-account {
+    background-color: var(--light-black);
+    padding-top: 60px;
+}
+
+.user-acc-block {
+    display: flex;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.user-acc-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.user-acc-sidebar-top {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-acc-sidebar-bottom {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+}
+.discounts h4{
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.user-acc-sidebar-top ul li {
+
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.discount-label {
+    margin-right: 10px;
+}
+.discounts-info {
+    margin-bottom: 40px;
+}
