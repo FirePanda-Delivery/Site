@@ -207,6 +207,7 @@ h4 {
     width: 100%;
     background: transparent;
     margin-bottom: 15px;
+    height: 40px;
 }
 
 .search-block-popup:focus {
@@ -301,7 +302,7 @@ h4 {
 }
 
 .popup .close:hover {
-    color: #06D85F;
+    color: var(--red);
 }
 
 .popup-map {
@@ -343,6 +344,32 @@ h4 {
 .search-block-eat {
     font-size: inherit;
     background: #fff;
+}
+
+.search-wrapper {
+    display: flex;
+}
+
+.search-wrapper button {
+    background: var(--red);
+    width: 130px;
+    height: 34px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 40px;
+}
+
+.search-wrapper button:active,
+.search-wrapper button:hover {
+    background-color: var(--dark-red);
 }
 
 .slide {

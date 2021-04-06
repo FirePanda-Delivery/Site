@@ -26,7 +26,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom-block">
-                <div class="copyright">© 2021 ООО «FirePanda Delivery»
+                <div class="copyright">© 2021 ООО «Фаерпанда Деливери»
                 </div>
                 <div class="social-links">
                     <i class="fab fa-vk"></i>

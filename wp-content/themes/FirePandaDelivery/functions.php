@@ -38,18 +38,3 @@ if(function_exists('register_nav_menus')){
         )
     );
 }
-
-function fontawesome_style_loader_tag( $html, $handle ) {
-	$scripts_to_load = array(
-		array(
-			( 'name' )      => 'fontawesome-style',
-			( 'integrity' ) => 'sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/',
-		)
-	);
-	$key = array_search( $handle, array_column( $scripts_to_load, 'name' ) );
-	if ( $key !== false ) {
-		$html = str_replace( '/>', ' integrity=\'' . $scripts_to_load[$key]['integrity'] . '\' crossorigin=\'anonymous\' />', $html );
-	}
-	return $html;
-}
-add_filter( 'style_loader_tag', 'fontawesome_style_loader_tag', 10, 2 );

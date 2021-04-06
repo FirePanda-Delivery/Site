@@ -28,8 +28,11 @@
 
                     <div id="popup1" class="overlay">
                         <div class="popup">
-                            <input type="text" class="search-block-popup" id="search-block-popup"
-                                placeholder="Укажите адрес доставки">
+                            <div class="search-wrapper">
+                                <input type="text" class="search-block-popup" id="search-block-popup"
+                                    placeholder="Адрес доставки">
+                                <button id="btn-search-popup" onclick="submitAddress()">Применить</button>
+                            </div>
                             <div class="popup-map" id="popup-map">
                                 <div id="map"></div>
                             </div>
