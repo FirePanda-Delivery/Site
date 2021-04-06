@@ -22,7 +22,7 @@ function scripts() {
 
 	// wp_enqueue_script('slick-min-js', get_template_directory_uri() . '/slick/slick.min.js');
 	wp_enqueue_script('slick-min-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
-	// wp_enqueue_script('map-js', get_template_directory_uri() . '/js/map.js');
+	wp_enqueue_script('map-js', get_template_directory_uri() . '/js/map.js');
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js');
 
 }
