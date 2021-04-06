@@ -41,9 +41,9 @@
                 <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" alt="logo">
                 </div>
                 <ul class="courier-menu">
-                    <li>Преимущества</li>
-                    <li>Как стать курьером</li>
-                    <li>Часто задаваемые вопросы</li>
+                    <li><a href="#преимущества" class="active">Преимущества</a></li>
+                    <li><a href="#стать" class="active">Как стать курьером</a></li>
+                    <li><a href="#вопросы" class="active">Часто задаваемые вопросы</a></li>
                 </ul>
             </div>
 
@@ -60,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section class="courier-advantages">
+    <section class="courier-advantages" id="преимущества">
         <div class="container">
             <div class="courier-advantages-block">
                 <h2>ПРЕИМУЩЕСТВА</h2>
@@ -89,11 +89,11 @@
             </div>
         </div>
     </section>
-    <section class="courier-become">
+    <section class="courier-become" id="стать">
         <div class="container">
             <div class="courier-become-block">
                 <h2>КАК СТАТЬ КУРЬЕРОМ</h2>
-                <div class="courier-become-items">
+                <div class="courier-become-items ">
                     <div class="courier-become-item">
                         <div class="courier-number">1</div>
                         <div>Заполнить форму и отправить</div>
@@ -120,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section class="courier-questions">
+    <section class="courier-questions" id="вопросы">
         <div class="courier-block-questions">
             <div class="container">
                 <h2 class="courier-questions-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>

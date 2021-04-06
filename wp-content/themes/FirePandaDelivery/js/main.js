@@ -18,6 +18,19 @@
     document.getElementById("see-more").setAttribute("style", "display: block");
 }
 
+// function scrollNav() {
+//     $('.courier-menu a').click(function(){
+//       $(".active").removeClass("active");     
+//       $(this).addClass("active");
+      
+//       $('html, body').stop().animate({
+//         scrollTop: $($(this).attr('href')).offset().top - 160
+//       }, 300);
+//       return false;
+//     });
+//   }
+//   scrollNav();
+
 // аккордеон на странице Курьер
 // const items = document.querySelectorAll(".accordion button");
 
@@ -35,3 +48,23 @@
 
 // items.forEach(item => item.addEventListener('click', toggleAccordion));
 
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+$('.slider').slick({
+    infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      fade: true,
+      fadeSpeed: 1000
+  });

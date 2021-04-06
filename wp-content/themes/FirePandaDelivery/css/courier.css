@@ -44,8 +44,11 @@
 .courier-menu li {
     margin-left: 40px;
 }
+.courier-menu li:hover {
+   color: var(--red);
+}
 .courier-block {
-    padding-top: 100px;
+    padding-top: 160px;
 }
 .courier-block a {
     margin-top: 40px;
@@ -55,9 +58,10 @@
 }
 .btn-courier {
     width: 200px;
+    margin: 0 auto;
 }
 .courier-become {
-    background-color: var(--black);
+    background-color: var(--light-black);
 }
 .courier-number {
     font-weight: bold;
@@ -84,7 +88,7 @@
     text-align: center;
 }
 .courier-become-block {
-    padding-top: 100px;
+    padding-top:60px;
 }
 .courier-advantages-items {
     display: flex;
@@ -107,21 +111,25 @@
     width: 175px;
 }
 .courier-advantages-block h2 {
-    color: var(--black);
+    color: var(--light-black);
 }
 .courier-advantages-block {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 .courier-advantages-item > i {
     margin-bottom: 30px;
 }
 .courier-questions-title  {
-    color: var(--black);
-    padding-top: 100px;
+    color: var(--light-black);
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 .courier-block-questions {
     padding-bottom: 100px;
+}
+.courier-block h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;

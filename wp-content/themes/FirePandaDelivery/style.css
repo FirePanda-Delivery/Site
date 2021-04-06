@@ -9,15 +9,18 @@ Description: Индивидуальный шаблон разработан дл
 :root {
     /*Цвета*/
     --black: #000000;
+    --light-black: #1f1f1f;
     --white: #ffffff;
-    --red: #900C0C;
+    --red: #C43030;
     --dark-red: #800606;
+    --light-red: #E84545;
     --orange: #EA5B0C;
 
+
     /*Руководство по стилям*/
-    --title-color: var(--black);
+    --title-color: var(--light-black);
     --title-color-white: var(--white);
-    --descr-color: var(--black);
+    --descr-color: var(--light-black);
     --descr-color-white: var(--white);
 
     --title-font: Montserrat;
@@ -63,7 +66,7 @@ p {
     font-size: 16px;
     line-height: 26px;
     text-align: justify;
-    color: var(--black);
+    color: var(--light-black);
 }
 
 h2 {
@@ -77,7 +80,7 @@ h4 {
     font-weight: bold;
     font-size: 22px;
     line-height: 38px;
-    color: var(--black);
+    color: var(--light-black);
 
 }
 
@@ -87,7 +90,7 @@ h4 {
 }
 
 .header-top {
-    background-color: var(--black);
+    background-color: var(--light-black);
     width: 100%;
 }
 
@@ -119,7 +122,8 @@ h4 {
     align-items: center;
 
 }
-.logo > img {
+
+.logo>img {
     width: 230px;
 }
 
@@ -129,14 +133,14 @@ h4 {
     padding: 10px 0;
 }
 
-.header-top-block > a > img {
+.header-top-block>a>img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
 }
 
 .main-menu {
-    background-color: var(--black);
+    background-color: var(--light-black);
 }
 
 .list-food ul li {
@@ -148,8 +152,9 @@ h4 {
     margin-right: 15px;
     transition: all 0.2s ease-in-out;
 }
+
 .list-food ul li:hover {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .list-food ul {
@@ -166,6 +171,7 @@ h4 {
     border-bottom: 1px solid var(--white);
     padding: 30px 0 10px;
 }
+
 .btn-more {
     color: var(--white);
     padding: 1px 20px;
@@ -174,35 +180,41 @@ h4 {
     line-height: 34px;
     text-transform: uppercase;
 }
+
 .btn-more:hover {
-    color: var(--orange);
-    border-color: var(--orange);
+    color: var(--red);
+    border-color: var(--red);
 }
+
 .search-block {
     border: 1px solid var(--white);
-    padding: 10px;
+    padding: 6px;
     color: var(--white);
     width: 100%;
     background: transparent;
+    font-size: 12px;
 }
+
 .search-block:focus {
-    color: var(--black);
+    color: var(--light-black);
     background: var(--white);
 }
+
 .search-block-popup {
-    border: 1px solid var(--black);
+    border: 1px solid var(--light-black);
     padding: 10px;
-    color: var(--black);
+    color: var(--light-black);
     width: 100%;
     background: transparent;
     margin-bottom: 15px;
 }
+
 .search-block-popup:focus {
     background: var(--white);
 }
 
 .list-restaurants {
-    background-color: var(--black);
+    background-color: var(--light-black);
 }
 
 .main-menu {
@@ -259,6 +271,7 @@ h4 {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
@@ -286,22 +299,26 @@ h4 {
     color: #333;
 
 }
+
 .popup .close:hover {
     color: #06D85F;
 }
 
 .popup-map {
-    width: 100%!important;
-    height: 100%!important;
+    width: 100% !important;
+    height: 100% !important;
 }
+
 #map {
-    width: 100%!important;
-    height: 85%!important;
+    width: 100% !important;
+    height: 85% !important;
 }
+
 .card-restaurant {
     width: 400px;
     /*height: 220px;*/
 }
+
 .card-restaurant-img img {
     object-fit: cover;
     object-position: 50% 50%;
@@ -313,13 +330,31 @@ h4 {
     height: 150px;
     border-radius: 30px 0 0 0;
 }
+
 .card-restaurant-rating {
     display: flex;
     align-items: center;
 }
+
 .card-restaurant-rating-number {
     margin-left: 10px;
 }
+
+.search-block-eat {
+    font-size: inherit;
+    background: #fff;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
 /*.btn-restaurants-more {*/
 /*    width: 100%;*/
 /*    padding: 15px;*/
@@ -339,6 +374,7 @@ h4 {
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
+
 #hide-blocks {
     width: 100%;
     padding: 15px;
@@ -347,10 +383,12 @@ h4 {
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
+
 footer {
-    background-color: var(--black);
+    background-color: var(--light-black);
     padding: 60px 0 10px;
 }
+
 .footer-top-block {
     color: var(--white);
     border-top: 1px solid var(--white);
@@ -358,40 +396,50 @@ footer {
     justify-content: space-between;
     padding: 30px;
 }
-.footer-top-block .logo > img {
+
+.footer-top-block .logo>img {
     width: 130px;
 }
+
 .footer-information {
     display: flex;
     flex-direction: column;
 }
+
 .footer-information ul li:hover {
     color: var(--red);
 }
+
 .footer-about ul li:hover {
     color: var(--red);
 }
+
 footer h6 {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.footer-information ul > li {
+
+.footer-information ul>li {
     margin-bottom: 10px;
     transition: all 0.2s ease-in-out;
 }
+
 .footer-about {
     display: flex;
     flex-direction: column;
 }
+
 .footer-about h6 {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.footer-about ul > li {
+
+.footer-about ul>li {
     margin-bottom: 10px;
 }
+
 .footer-bottom-block {
     color: var(--white);
     border-top: 1px solid var(--white);
@@ -399,9 +447,11 @@ footer h6 {
     justify-content: space-between;
     padding: 30px 0 50px;
 }
+
 .social-links i {
     width: 30px;
 }
+
 .social-links i:hover {
     color: var(--red);
 }
@@ -413,9 +463,11 @@ p#see-more {
 p#hide-blocks {
     cursor: pointer;
 }
+
 .contacts {
-    background-color: var(--black);
+    background-color: var(--light-black);
 }
+
 .contacts-block-information {
     background-color: var(--white);
     padding: 30px;
@@ -467,9 +519,8 @@ p#hide-blocks {
         padding-left: 30px;
         padding-right: 30px;
     }
+
     .list-restaurants-cards {
         justify-content: center;
     }
 }
-
-

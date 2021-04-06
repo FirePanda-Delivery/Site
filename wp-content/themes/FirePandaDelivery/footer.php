@@ -2,7 +2,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="footer-top-block">
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></div>
+                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo"></div>
                 <div class="footer-information">
                     <h6>Информация</h6>
                     <ul>
@@ -39,6 +39,7 @@
 </footer>
 
 </body>
+
 <?php wp_footer(); ?>
 
 </html>
