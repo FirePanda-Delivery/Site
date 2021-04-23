@@ -6,21 +6,20 @@
                 <div class="footer-information">
                     <h6>Информация</h6>
                     <ul>
-                        <li><a href="#">Ресторанам</a></li>
-                        <li><a href="#">Курьерам</a></li>
+                        <li><a href="http://firepanda/Site/partners/">Ресторанам</a></li>
+                        <li><a href="http://firepanda/Site/courier">Курьерам</a></li>
                     </ul>
                 </div>
                 <div class="footer-about">
                     <h6>О компании</h6>
                     <ul>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="http://firepanda/Site/contacts/">Контакты</a></li>
                         <li><a href="#">Условия акций</a></li>
-                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="mailto:">Обратная связь</a></li>
                         <li><a href="#">Пользовательское соглашение</a></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="footer-bottom">

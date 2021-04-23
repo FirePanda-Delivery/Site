@@ -20,8 +20,12 @@
                     <?php wp_nav_menu("menu=Категории"); ?>
                     <div class="btn-more">Еще</div>
                 </div>
-                <input type="text" class="search-block search-block-eat" id="search-block-eat"
-                    placeholder="Название ресторана, блюдо, кухня">
+                <div class="search-food-block">
+                    <input type="text" class="search-block search-block-eat" id="search-block-eat"
+                        placeholder="Название ресторана, блюдо, кухня">
+                    <div class="search-food-btn">Найти</div>
+                </div>
+
             </div>
         </div>
 

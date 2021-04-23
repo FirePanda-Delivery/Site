@@ -6,7 +6,9 @@
 .user-acc-block {
     display: flex;
     margin-top: 60px;
+    padding-bottom: 100px;
     color: var(--white);
+    justify-content: space-between;
 }
 
 .user-acc-sidebar {
@@ -25,18 +27,129 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 40px;
 }
-.discounts h4{
+
+.user-acc-profile {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+   
+}
+.user-acc-my-orders {
+display: none;
+}
+
+.user-acc-my-orders {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60%;
+}
+.user-acc-my-orders h4{
+color: var(--white);
+}
+.user-acc-profile h4 {
     color: var(--white);
     margin-bottom: 15px;
 }
+
+.discounts h5 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
 .user-acc-sidebar-top ul li {
 
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 .discount-label {
     margin-right: 10px;
 }
+
 .discounts-info {
     margin-bottom: 40px;
+}
+
+#user-acc-form input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    color: var(--white);
+    width: 80%;
+}
+
+#user-contact-submit {
+    background: var(--red);
+    width: 130px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+}
+
+.order-total-cost {
+    color: var(--white);
+    font-weight: bold;
+}
+.order-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.order-resraurant-date {
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.order-resraurant-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--gray);
+}
+.order-resraurant-name {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.order-product {
+    font-size: 18px;
+    max-width: 350px;
+}
+.order-product-count {
+    color: var(--gray);
+}
+.order-bottom-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.order-resraurant {
+    display: flex;
+    flex-direction: column;
+}
+.order-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.user-acc-avatar img {
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+}
+.user-acc-sidebar-top ul li:hover {
+    color: var(--red);
 }
