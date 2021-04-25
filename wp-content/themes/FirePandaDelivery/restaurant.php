@@ -65,7 +65,7 @@
                 <div class="restaurant-product-cards">
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -121,7 +121,7 @@
                     </div>
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -149,7 +149,7 @@
                     </div>
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -177,7 +177,7 @@
                     </div>
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -205,7 +205,7 @@
                     </div>
                     <div class="restaurant-product-card">
                         <div class="restaurant-product-img"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/resraurant-offer.jpeg" alt="">
+                                src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg" alt="">
                         </div>
                         <h4>Бургер Биг</h4>
                         <div class="restaurant-product-descr">
@@ -231,7 +231,6 @@
                             в корзину
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
