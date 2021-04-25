@@ -106,6 +106,7 @@
 
 .courier-become-block {
     padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .courier-advantages-items {
@@ -123,7 +124,7 @@
     align-items: center;
     font-weight: bold;
     text-align: center;
-    width: 250px!important;
+    width: 30%;
     margin-bottom: 40px;
 }
 
@@ -297,6 +298,7 @@
 #contact h3 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 fieldset {
@@ -354,11 +356,6 @@ fieldset {
 .overlay {
     z-index: 99999;
 }
-
-
-
-
-
 .mobile-menu {
     display: flex;
     align-items: center;
@@ -512,4 +509,14 @@ fieldset {
     .courier-block-form {
         width: 100%!important;
     }
+    #contact h3 {
+        font-size: 18px!important;
+    }
 }
+
+@media (max-width: 768px) {
+    .courier-advantages-item {
+        width: 100%;
+    }
+}
+

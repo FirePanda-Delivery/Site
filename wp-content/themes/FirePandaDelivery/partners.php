@@ -38,8 +38,8 @@
     <div class="header-bottom">
         <div class="container">
             <div class="header-bottom-block">
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" alt="logo">
-                </div>
+                <div class="logo"><a href="/Site"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a></div>
                 <ul class="restaurant-menu">
                     <li>
                         <a href="#подключить" class="active">Как быстро подключить ресторан</a>

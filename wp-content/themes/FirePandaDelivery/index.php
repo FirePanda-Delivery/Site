@@ -25,11 +25,10 @@
                         placeholder="Название ресторана, блюдо, кухня">
                     <div class="search-food-btn">Найти</div>
                 </div>
-
             </div>
         </div>
-
     </section>
+
     <section class="list-restaurants">
         <div class="container">
             <div class="list-restaurants-block">

@@ -12,6 +12,7 @@ function styles() {
 	wp_enqueue_style('slick-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 	wp_enqueue_style( 'courier-css', get_template_directory_uri().'/css/courier.css');
 	wp_enqueue_style( 'partners-css', get_template_directory_uri().'/css/partners.css');
+	wp_enqueue_style( 'restaurant-css', get_template_directory_uri().'/css/restaurant.css');
 	wp_enqueue_style( 'user-account-css', get_template_directory_uri().'/css/user-account.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
 }

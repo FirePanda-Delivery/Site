@@ -8,14 +8,15 @@ Description: Индивидуальный шаблон разработан дл
 /* CSS переменные */
 :root {
     /*Цвета*/
-    --black: #000000;
-    --light-black: #1f1f1f;
+    --light-black: #141414;
     --gray: #a2a2a2;
     --white: #ffffff;
     --red: #C43030;
     --dark-red: #800606;
-    /* --light-red: #E84545; */
     --orange: #EA5B0C;
+    /* --light-black: #1f1f1f; */
+    /* --light-red: #E84545; */
+    /* --black: #000000; */
 
     /*Руководство по стилям*/
     --title-color: var(--light-black);
@@ -74,6 +75,7 @@ h2 {
     font-size: 30px;
     line-height: 38px;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 h4 {
@@ -87,6 +89,31 @@ h4 {
 .container {
     max-width: 1290px;
     margin: auto;
+}
+
+#header-main {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+#header-user {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+.slider-section {
+    margin-top: 135px;
+}
+
+.header-bottom-wrapp {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-top {
@@ -113,6 +140,11 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
+.btn-login:hover {
+    background-color: var(--dark-red);
+}
+
 .search-food-btn {
     background: var(--red);
     width: 130px;
@@ -127,9 +159,11 @@ h4 {
     justify-content: center;
     cursor: pointer;
 }
+
 .search-food-btn:hover {
     background: var(--dark-red);
 }
+
 .search-food-block {
     display: flex;
 }
@@ -143,7 +177,7 @@ h4 {
 
 }
 
-.logo > img {
+.logo>a>img {
     width: 230px;
     cursor: pointer;
 }
@@ -154,7 +188,7 @@ h4 {
     padding: 10px 0;
 }
 
-.header-top-block > a > img {
+.header-top-block>a>img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
@@ -168,11 +202,12 @@ h4 {
     font-weight: bold;
     font-size: 18px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: var(--white);
     text-transform: uppercase;
     margin-right: 15px;
     transition: all 0.2s ease-in-out;
 }
+
 .list-food ul li:hover {
     color: var(--red);
 }
@@ -200,6 +235,7 @@ h4 {
     line-height: 34px;
     text-transform: uppercase;
 }
+
 .btn-more:hover {
     color: var(--red);
     border-color: var(--red);
@@ -213,6 +249,7 @@ h4 {
     background: transparent;
     font-size: 12px;
 }
+
 .search-block:focus {
     color: var(--light-black);
     background: var(--white);
@@ -227,6 +264,7 @@ h4 {
     margin-bottom: 15px;
     height: 40px;
 }
+
 .search-block-popup:focus {
     background: var(--white);
 }
@@ -289,6 +327,7 @@ h4 {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
@@ -316,6 +355,7 @@ h4 {
     color: #333;
 
 }
+
 .popup .close:hover {
     color: var(--red);
 }
@@ -359,7 +399,7 @@ h4 {
 .search-block-eat {
     font-size: inherit;
     background: #fff;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .search-wrapper {
@@ -382,6 +422,7 @@ h4 {
     border: none;
     height: 40px;
 }
+
 .search-wrapper button:active,
 .search-wrapper button:hover {
     background-color: var(--dark-red);
@@ -436,7 +477,7 @@ footer {
     padding: 30px;
 }
 
-.footer-top-block .logo > img {
+.footer-top-block .logo>img {
     width: 130px;
 }
 
@@ -444,9 +485,11 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .footer-information ul li:hover {
     color: var(--red);
 }
+
 .footer-about ul li:hover {
     color: var(--red);
 }
@@ -457,7 +500,7 @@ footer h6 {
     margin-bottom: 20px;
 }
 
-.footer-information ul > li {
+.footer-information ul>li {
     margin-bottom: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -473,7 +516,7 @@ footer h6 {
     margin-bottom: 20px;
 }
 
-.footer-about ul > li {
+.footer-about ul>li {
     margin-bottom: 10px;
 }
 
@@ -488,6 +531,7 @@ footer h6 {
 .social-links i {
     width: 30px;
 }
+
 .social-links i:hover {
     color: var(--red);
 }
@@ -502,6 +546,7 @@ p#hide-blocks {
 
 .contacts {
     background-color: var(--light-black);
+    padding-top: 135px;
 }
 
 .contacts-block-information {
@@ -523,10 +568,12 @@ p#hide-blocks {
     width: 100%;
     cursor: pointer;
 }
+
 .header-bottom-user {
     display: flex;
     align-items: center;
 }
+
 .header-cart {
     margin-right: 20px;
     cursor: pointer;
@@ -537,7 +584,7 @@ p#hide-blocks {
     color: var(--light-black);
 }
 
-.header-cart-count{
+.header-cart-count {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -552,6 +599,46 @@ p#hide-blocks {
     align-items: center;
     font-size: 13px;
 }
+
+.toggle-theme {
+    position: relative;
+    width: 40px;
+    margin-left: 10px;
+}
+.toggle {
+    /* position: absolute;
+    top: 40px;
+    right: 50px; */
+    background: #FFF;
+    border: 2px solid #00151f;
+    height: 20px;
+    width: 45px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+   
+  .toggle:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: .5s;
+  }
+   
+  .toggle.active:before{
+   left: 27px;
+    background: #FFF;
+  }
+   
+  .toggle.active{
+    background: #00151f;
+    border: 2px solid #FFF;
+  }
+
 
 
 /*медиазапросы*/
@@ -582,15 +669,14 @@ p#hide-blocks {
         padding-right: 40px;
         margin: auto;
     }
+
     .list-restaurants-cards {
         justify-content: space-around;
     }
+
     .card-restaurant {
         width: 300px;
     }
-
-
-
 
 }
 
@@ -601,47 +687,59 @@ p#hide-blocks {
         padding-right: 30px;
     }
 }
+
 @media (max-width: 700px) {
     .container {
         padding-left: 30px;
         padding-right: 30px;
     }
+
     .footer-top-block {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .footer-top-block > div {
+
+    .footer-top-block>div {
         margin-bottom: 30px;
         text-align: center;
     }
+
     .footer-bottom-block {
         flex-direction: column;
         align-items: center;
     }
+
     .copyright {
         margin-bottom: 20px;
     }
+
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .logo > img {
+
+    .logo>img {
         width: 170px;
     }
+
     .btn-login {
         width: 110px;
     }
+
     .list-food {
         flex-direction: column;
         display: flex;
     }
+
     .list-food ul li {
         font-weight: bold;
         font-size: 15px;
     }
+
     .list-food ul {
         justify-content: center;
-        margin-bottom: 20px;      
-        }
+        margin-bottom: 20px;
+    }
 }
+

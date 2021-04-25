@@ -43,23 +43,21 @@ function scrollNav() {
                 }, 300);
             return false;
         });
-        $('.restaurant-menu a')
-        .click(function () {
-            $(".active").removeClass("active");
-            $(this).addClass("active");
+    $('.restaurant-menu a').click(function () {
+        $(".active").removeClass("active");
+        $(this).addClass("active");
 
-            $('html, body')
-                .stop()
-                .animate({
-                    scrollTop: $($(this).attr('href'))
-                        .offset()
-                        .top - 160
-                }, 300);
-            return false;
-        });
+        $('html, body')
+            .stop()
+            .animate({
+                scrollTop: $($(this).attr('href'))
+                    .offset()
+                    .top - 160
+            }, 300);
+        return false;
+    });
 }
 scrollNav();
-
 
 // аккордеон на странице Курьер
 const items = document.querySelectorAll(".accordion button");
@@ -106,49 +104,102 @@ $('.slider').slick({
     fadeSpeed: 1000
 });
 //маска ввода на стр Курьер
-$(document).ready(function() {
-  $("#phone").mask("+7 (999) 99-99-999");
+$(document).ready(function () {
+    $("#phone").mask("+7 (999) 99-99-999");
 });
 
 //Валидация email на стр Курьер
-function validate(form_id,email) {
-  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  var address = document.forms[form_id].elements[email].value;
-  if(reg.test(address) == false) {
-     alert('Введите корректный e-mail');
-     return false;
-  }
+function validate(form_id, email) {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = document.forms[form_id].elements[email].value;
+    if (reg.test(address) == false) {
+        alert('Введите корректный e-mail');
+        return false;
+    }
 }
 
+// Мобильное меню
+$(document)
+    .ready(function () {
+        //toggle menu
+        $(".hamburger-container")
+            .click(function () {
+                $("#menu").slideToggle();
+            });
 
-$(document).ready(function() {
-    //toggle menu
-    $(".hamburger-container").click(function() {
-      $("#menu").slideToggle();
+        //to fix issue that toggle adds style(hides) to nav
+        $(window).resize(function () {
+            if (window.innerWidth > 1024) {
+                $("#menu").removeAttr("style");
+            }
+        });
+
+        //icon animation
+        var topBar = $(".hamburger li:nth-child(1)"),
+            middleBar = $(".hamburger li:nth-child(2)"),
+            bottomBar = $(".hamburger li:nth-child(3)");
+
+        $(".hamburger-container").on("click", function () {
+            if (middleBar.hasClass("rot-45deg")) {
+                topBar.removeClass("rot45deg");
+                middleBar.removeClass("rot-45deg");
+                bottomBar.removeClass("hidden");
+            } else {
+                bottomBar.addClass("hidden");
+                topBar.addClass("rot45deg");
+                middleBar.addClass("rot-45deg");
+            }
+        });
     });
-  
-    //to fix issue that toggle adds style(hides) to nav
-    $(window).resize(function() {
-      if (window.innerWidth > 1024) {
-        $("#menu").removeAttr("style");
-      }
-    });
-  
-    //icon animation
-    var topBar = $(".hamburger li:nth-child(1)"),
-      middleBar = $(".hamburger li:nth-child(2)"),
-      bottomBar = $(".hamburger li:nth-child(3)");
-  
-    $(".hamburger-container").on("click", function() {
-      if (middleBar.hasClass("rot-45deg")) {
-        topBar.removeClass("rot45deg");
-        middleBar.removeClass("rot-45deg");
-        bottomBar.removeClass("hidden");
-      } else {
-        bottomBar.addClass("hidden");
-        topBar.addClass("rot45deg");
-        middleBar.addClass("rot-45deg");
-      }
-    });
-  });
-  
+
+// Блок на странице Ресторан
+$(document).ready(function () {
+    $('.content_toggle')
+        .click(function () {
+            $('.restaurant-content_block')
+                .slideToggle(300, function () {
+                    if ($(this).is(':hidden')) {
+                        $('.content_toggle').html('<i class="fas fa-chevron-down">');
+                        $('.content_toggle').removeClass('open');
+                    } else {
+                        $('.content_toggle').html('<i class="fas fa-chevron-up"></i>');
+                        $('.content_toggle').addClass('open');
+                    }
+                });
+            return false;
+        });
+});
+
+// Счетчик товара
+
+var plus = document.querySelectorAll('.plus');
+var minus = document.querySelectorAll('.minus');
+var number = document.querySelectorAll('.number');
+var i = 0;
+
+plus[i].onclick = up;
+function up() {
+    var count = Number(number[i].innerHTML);
+    if(count < 100){
+        number[i].innerHTML = count += 1;
+    }
+   
+}
+minus[i].onclick = down;
+function down() {
+    var count = Number(number[i].innerHTML);
+    if(count > 1) {
+        number[i].innerHTML = count -= 1;
+    }
+    
+}
+
+// Переключатель темы
+
+// $(function () {
+//   $('.toggle').on('click' ,function(event) {
+//     $(this).toggleClass('active');
+//     $('body').toggleClass('night');				
+//   });
+// });
+

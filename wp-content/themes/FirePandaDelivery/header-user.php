@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header-user" class="header">
         <div class="header-top">
             <div class="container">
                 <div class="header-top-block">
@@ -44,20 +44,23 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-bottom-block">
-                    <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg"
-                            alt="logo">
+                <div class="header-bottom-wrapp">
+                    <div class="header-bottom-block">
+                        <div class="logo"><a href="/Site"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a>
+                        </div>
                     </div>
                     <div class="header-bottom-user">
                         <div class="header-cart">
                             <i class="fas fa-shopping-cart fa-2x"></i>
                             <div class="header-cart-count">1</div>
                         </div>
-                        <div class="header-avatar"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/logo-main.svg" alt="avatar"></div>
+                        <div class="header-avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/avatar.png"
+                                alt="avatar"></div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </header>

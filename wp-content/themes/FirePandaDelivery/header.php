@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header-main" class="header">
         <div class="header-top">
             <div class="container">
                 <div class="header-top-block">
@@ -39,14 +39,18 @@
                             <a class="close" href="#">&times;</a>
                         </div>
                     </div>
+                    <div class="toggle-theme">
+                        <div class="toggle"></div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-block">
-                    <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg"
-                            alt="logo"></div>
+                    <div class="logo"><a href="/Site"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a></div>
                     <div class="btn-login">Войти</div>
                 </div>
 
