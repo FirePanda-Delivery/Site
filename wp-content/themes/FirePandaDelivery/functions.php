@@ -13,6 +13,8 @@ function styles() {
 	wp_enqueue_style( 'courier-css', get_template_directory_uri().'/css/courier.css');
 	wp_enqueue_style( 'partners-css', get_template_directory_uri().'/css/partners.css');
 	wp_enqueue_style( 'restaurant-css', get_template_directory_uri().'/css/restaurant.css');
+	wp_enqueue_style( 'cart-css', get_template_directory_uri().'/css/cart.css');
+	wp_enqueue_style( 'creating-restaurant-css', get_template_directory_uri().'/css/creating-restaurant.css');
 	wp_enqueue_style( 'user-account-css', get_template_directory_uri().'/css/user-account.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
 }

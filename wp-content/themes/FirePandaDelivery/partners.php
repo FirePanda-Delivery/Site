@@ -201,6 +201,46 @@
 
         </div>
     </section>
+
+    <section class="courier-form">
+        <div class="container">
+            <div class="courier-block-form">
+                <form id="contact" action="" method="post">
+                    <h3>Заполните форму и с вами скоро свяжутся</h3>
+                    <fieldset>
+                        <input placeholder="Название компании" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваше имя, фамилия" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш email" id="email" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш номер телефона" type="tel" id="phone" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ваш город" type="text" tabindex="4" required>
+                    </fieldset>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="policy" id="policy" class="policy">
+                        <label for="policy" class="policy-label">
+                            Я даю ООО «Фаер Панда Деливери» свое согласие на обработку моих персональных данных в
+                            соответствии с Федеральным Законом от 27.07.2006 года № 152-ФЗ «О персональных данных» на
+                            условиях и для целей, определенных в этой заявке и в Политике конфиденциальности,
+                            ознакомление с текстом которой я подтверждаю, в течение срока, необходимого для достижения
+                            указанных целей и 5 лет после их достижения.
+                        </label>
+                    </div>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit"
+                            data-submit="...Sending">отправить</button>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </section>
     <section class="courier-questions">
         <div class="courier-block-questions">
             <div class="container">
