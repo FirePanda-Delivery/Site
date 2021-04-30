@@ -2,6 +2,12 @@ let textInput = document.getElementById('search');
 let textInputPopup = document.getElementById('search-block-popup');
 let city;
 
+let address = localStorage.getItem("address");
+
+if (address) {
+    textInput.value = address;
+}
+
 ymaps.ready(init);
 
 function init() {
@@ -9,27 +15,30 @@ function init() {
     // HTML-элементу по его id.
     let suggestView1 = new ymaps.SuggestView('search');
 
-
-    // let searchControl = new ymaps
-    //     .control
-    //     .SearchControl({
-    //         options: {
-    //             provider: 'yandex#map'
-    //         }
-    //     });
-
     let myPlacemark,
         myMap = new ymaps.Map('map', {
             center: [
                 51.660732,
                  39.200265
             ],
-            zoom: 15
+            zoom: 15,
+            controls: [
+                "geolocationControl",
+                "searchControl",
+                "typeSelector",
+                "zoomControl"
+            ]
 
         }, {
             suppressMapOpenBlock: true,
             autoFitToViewport: 'always'
         });
+
+    ymaps.geolocation.get({
+        mapStateAutoApply: false
+    }).then(function (result) {
+        myMap.setCenter(result.geoObjects.get(0).geometry.getCoordinates(), 15);
+    });
 
     // Слушаем клик на карте.
     myMap
@@ -88,6 +97,7 @@ function submitAddress() {
     // let date = new Date();
     // date.setFullYear(date.getFullYear() + 10);
     // document.cookie = "address=" + textInputPopup.value + "; expires=" + date;
+
     localStorage.setItem("address", textInputPopup.value);
     localStorage.setItem("city", city);
     textInput.value = textInputPopup.value;
