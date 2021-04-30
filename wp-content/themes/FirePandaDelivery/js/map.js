@@ -1,21 +1,24 @@
-var textInput;
-var textInputPopup;
+let textInput = document.getElementById('search');
+let textInputPopup = document.getElementById('search-block-popup');
+let city;
 
 ymaps.ready(init);
 
 function init() {
     // Создаем выпадающую панель с поисковыми подсказками и прикрепляем ее к
     // HTML-элементу по его id.
-    var suggestView1 = new ymaps.SuggestView('search');
-    var searchControl = new ymaps
-        .control
-        .SearchControl({
-            options: {
-                provider: 'yandex#map'
-            }
-        });
+    let suggestView1 = new ymaps.SuggestView('search');
 
-    var myPlacemark,
+
+    // let searchControl = new ymaps
+    //     .control
+    //     .SearchControl({
+    //         options: {
+    //             provider: 'yandex#map'
+    //         }
+    //     });
+
+    let myPlacemark,
         myMap = new ymaps.Map('map', {
             center: [
                 51.660732,
@@ -28,15 +31,11 @@ function init() {
             autoFitToViewport: 'always'
         });
 
-
-    textInput = document.getElementById('search');
-    textInputPopup = document.getElementById('search-block-popup');
-
     // Слушаем клик на карте.
     myMap
         .events
         .add('click', function (e) {
-            var coords = e.get('coords');
+            let coords = e.get('coords');
 
             // Если метка уже создана – просто передвигаем ее.
             if (myPlacemark) {
@@ -74,20 +73,53 @@ function init() {
         ymaps
             .geocode(coords)
             .then(function (res) {
-                var firstGeoObject = res
+                let firstGeoObject = res
                     .geoObjects
                     .get(0);
 
                 textInputPopup.value = firstGeoObject.getAddressLine();
+                city = firstGeoObject.getLocalities();
 
             });
     }
 
 }
 function submitAddress() {
-    let date = new Date();
-    date.setFullYear(date.getFullYear() + 10);
-    document.cookie = "address=" + textInputPopup.value + "; expires=" + date;
+    // let date = new Date();
+    // date.setFullYear(date.getFullYear() + 10);
+    // document.cookie = "address=" + textInputPopup.value + "; expires=" + date;
+    localStorage.setItem("address", textInputPopup.value);
+    localStorage.setItem("city", city);
     textInput.value = textInputPopup.value;
-}
 
+}
+// предыдушее значение инпута с адресом
+let beforeValue = "";
+
+// слушаем клик и записываем значение
+textInput.addEventListener("click", function () {
+    if (this.value) {
+        beforeValue = this.value;
+    }
+})
+
+/**
+ * слушаем изменение адреса в хедере. Проверяем что это здание и записываем
+ */
+textInput.addEventListener("change", function () {
+    ymaps
+        .geocode(this.value)
+        .then(function (res) {
+            let firstGeoObject = res
+                .geoObjects
+                .get(0);
+            if (!firstGeoObject.getPremiseNumber()) {
+                textInput.value = beforeValue;
+            } else {
+                textInput.value = firstGeoObject.getAddressLine();
+                localStorage.setItem("address", firstGeoObject.getAddressLine());
+                localStorage.setItem("city", firstGeoObject.getLocalities());
+            }
+
+        });
+});
