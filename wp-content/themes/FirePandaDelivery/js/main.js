@@ -27,7 +27,7 @@ function hideblocks() {
         .setAttribute("style", "display: block");
 }
 
-// плавность якроей на стр Курьер
+// плавность якорей на стр Курьер
 function scrollNav() {
     $('.courier-menu a')
         .click(function () {
@@ -172,27 +172,28 @@ $(document).ready(function () {
 
 // Счетчик товара
 
-var plus = document.querySelectorAll('.plus');
-var minus = document.querySelectorAll('.minus');
-var number = document.querySelectorAll('.number');
-var i = 0;
+// var plus = document.querySelectorAll('.plus');
+// var minus = document.querySelectorAll('.minus');
+// var number = document.querySelectorAll('.number');
+// var i = 0;
 
-plus[i].onclick = up;
-function up() {
-    var count = Number(number[i].innerHTML);
-    if(count < 100){
-        number[i].innerHTML = count += 1;
-    }
+// plus[i].onclick = up;
+// function up() {
+//     var count = Number(number[i].innerHTML);
+//     if(count < 100){
+//         number[i].innerHTML = count += 1;
+//     }
    
-}
-minus[i].onclick = down;
-function down() {
-    var count = Number(number[i].innerHTML);
-    if(count > 1) {
-        number[i].innerHTML = count -= 1;
-    }
+// }
+// minus[i].onclick = down;
+// function down() {
+//     var count = Number(number[i].innerHTML);
+//     if(count > 1) {
+//         number[i].innerHTML = count -= 1;
+//     }
     
-}
+// }
+
 
 // Переключатель темы
 
@@ -202,4 +203,16 @@ function down() {
 //     $('body').toggleClass('night');				
 //   });
 // });
+
+
+// document.getElementById('rest-category-btn').addEventListener("click", hiddenCloseclick);
+// 	function hiddenCloseclick() {
+// 	let x = document.getElementById('hidden-rest-category');
+//       if (x.style.display == "none"){
+// 	  x.style.display = "block";
+// 	  } else {
+// 	 x.style.display = "none"}
+//     };
+
+
 

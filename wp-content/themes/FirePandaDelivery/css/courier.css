@@ -319,6 +319,7 @@ fieldset {
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
+    font-family: inherit;
 }
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,

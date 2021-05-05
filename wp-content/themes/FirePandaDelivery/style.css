@@ -125,6 +125,20 @@ h4 {
     width: 100%;
     background-color: var(--white);
 }
+.btn {
+    background: var(--red);
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.btn:hover {
+    background-color: var(--dark-red);
+}
 
 .btn-login {
     background: var(--red);
@@ -346,14 +360,12 @@ h4 {
 
 .popup .close {
     position: absolute;
-    top: -3px;
-    right: 5px;
+    top: 2px;
+    right: 10px;
     transition: all 200ms;
-    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
-
+    color: var(--light-black);
 }
 
 .popup .close:hover {
