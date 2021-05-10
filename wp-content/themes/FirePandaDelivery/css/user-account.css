@@ -58,7 +58,6 @@ color: var(--white);
 }
 
 .user-acc-sidebar-top ul li {
-
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -153,3 +152,4 @@ color: var(--white);
 .user-acc-sidebar-top ul li:hover {
     color: var(--red);
 }
+
