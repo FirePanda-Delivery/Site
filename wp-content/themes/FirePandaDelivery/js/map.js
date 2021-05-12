@@ -1,6 +1,6 @@
 let textInput = document.getElementById('search');
 let textInputPopup = document.getElementById('search-block-popup');
-let city;
+//let city;
 
 let address = localStorage.getItem("address");
 
@@ -94,13 +94,27 @@ function init() {
 
 }
 function submitAddress() {
-    // let date = new Date();
-    // date.setFullYear(date.getFullYear() + 10);
-    // document.cookie = "address=" + textInputPopup.value + "; expires=" + date;
 
-    localStorage.setItem("address", textInputPopup.value);
-    localStorage.setItem("city", city);
-    textInput.value = textInputPopup.value;
+    ymaps
+        .geocode(textInputPopup.value)
+        .then(function (res) {
+            let firstGeoObject = res
+                .geoObjects
+                .get(0);
+            if (!firstGeoObject.getPremiseNumber()) {
+                alert("добавить предупреждение о том что это не дом")
+            } else {
+                textInput.value = firstGeoObject.getAddressLine();
+                localStorage.setItem("address", firstGeoObject.getAddressLine());
+                localStorage.setItem("city", firstGeoObject.getLocalities());
+                localStorage.setItem("coordinates", firstGeoObject.geometry.getCoordinates());
+            }
+
+        });
+    //
+    // localStorage.setItem("address", textInputPopup.value);
+    // localStorage.setItem("city", city);
+    // textInput.value = textInputPopup.value;
 
 }
 // предыдушее значение инпута с адресом
@@ -128,7 +142,8 @@ textInput.addEventListener("change", function () {
             } else {
                 textInput.value = firstGeoObject.getAddressLine();
                 localStorage.setItem("address", firstGeoObject.getAddressLine());
-                localStorage.setItem("city", firstGeoObject.getLocalities());
+                localStorage.setItem("city", firstGeoObject.getLocalities()[0]);
+                localStorage.setItem("coordinates", firstGeoObject.geometry.getCoordinates());
             }
 
         });

@@ -1,31 +1,40 @@
+
+let url = "https://fire-panda-delivery.herokuapp.com";
+//let url = "http://localhost:8070";
+
+let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg";
+
+
+
+
 // $(document).click(function(event) {     if
 // (!$(event.target).closest(".modal,.js-open-modal").length) {
 // $("body").find(".popup").removeClass("visible");     } });
-function seemore() {
-    document
-        .getElementById("more-cards")
-        .setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
-
-    document
-        .getElementById("see-more")
-        .setAttribute("style", "display: none");
-
-    document
-        .getElementById("hide-blocks")
-        .setAttribute("style", "display: block");
-
-}
-function hideblocks() {
-    document
-        .getElementById("more-cards")
-        .setAttribute("style", "display: none");
-    document
-        .getElementById("hide-blocks")
-        .setAttribute("style", "display: none");
-    document
-        .getElementById("see-more")
-        .setAttribute("style", "display: block");
-}
+// function seemore() {
+//     document
+//         .getElementById("more-cards")
+//         .setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+//
+//     document
+//         .getElementById("see-more")
+//         .setAttribute("style", "display: none");
+//
+//     document
+//         .getElementById("hide-blocks")
+//         .setAttribute("style", "display: block");
+//
+// }
+// function hideblocks() {
+//     document
+//         .getElementById("more-cards")
+//         .setAttribute("style", "display: none");
+//     document
+//         .getElementById("hide-blocks")
+//         .setAttribute("style", "display: none");
+//     document
+//         .getElementById("see-more")
+//         .setAttribute("style", "display: block");
+// }
 
 // плавность якроей на стр Курьер
 function scrollNav() {
@@ -69,7 +78,7 @@ function toggleAccordion() {
         items[i].setAttribute('aria-expanded', 'false');
     }
 
-    if (itemToggle == 'false') {
+    if (itemToggle === 'false') {
         this.setAttribute('aria-expanded', 'true');
     }
 }
@@ -112,7 +121,7 @@ $(document).ready(function () {
 function validate(form_id, email) {
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     var address = document.forms[form_id].elements[email].value;
-    if (reg.test(address) == false) {
+    if (reg.test(address) === false) {
         alert('Введите корректный e-mail');
         return false;
     }
@@ -172,27 +181,27 @@ $(document).ready(function () {
 
 // Счетчик товара
 
-var plus = document.querySelectorAll('.plus');
-var minus = document.querySelectorAll('.minus');
-var number = document.querySelectorAll('.number');
-var i = 0;
+// var plus = document.querySelectorAll('.plus');
+// var minus = document.querySelectorAll('.minus');
+// var number = document.querySelectorAll('.number');
+// var i = 0;
 
-plus[i].onclick = up;
-function up() {
-    var count = Number(number[i].innerHTML);
-    if(count < 100){
-        number[i].innerHTML = count += 1;
-    }
-   
-}
-minus[i].onclick = down;
-function down() {
-    var count = Number(number[i].innerHTML);
-    if(count > 1) {
-        number[i].innerHTML = count -= 1;
-    }
-    
-}
+// plus[i].onclick = up;
+// function up() {
+//     var count = Number(number[i].innerHTML);
+//     if(count < 100){
+//         number[i].innerHTML = count += 1;
+//     }
+//
+// }
+// minus[i].onclick = down;
+// function down() {
+//     var count = Number(number[i].innerHTML);
+//     if(count > 1) {
+//         number[i].innerHTML = count -= 1;
+//     }
+//
+// }
 
 // Переключатель темы
 
@@ -202,4 +211,5 @@ function down() {
 //     $('body').toggleClass('night');				
 //   });
 // });
+
 
