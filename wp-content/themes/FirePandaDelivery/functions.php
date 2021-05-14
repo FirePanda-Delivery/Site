@@ -31,6 +31,15 @@ function scripts() {
 	wp_enqueue_script('create-rest-js', get_template_directory_uri() . '/js/creating-rest.js');
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js');
 
+	if (is_front_page()) {
+        wp_enqueue_script('index-js', get_template_directory_uri() . '/js/index.js');
+    }
+
+	if (is_page("restaurant")) {
+        wp_enqueue_script('restaurant-js', get_template_directory_uri() . '/js/restaurant.js');
+    }
+
+
 }
 // регистрируем скрипты
 add_action('wp_enqueue_scripts', 'scripts');
