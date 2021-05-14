@@ -63,7 +63,7 @@
     <section class="restaurant">
         <div class="container">
             <div class="restaurant-block">
-                <h2>Станьте партнёром </br>сервиса FirePandaDelivery
+                <h2>Станьте партнёром </br>сервиса FirePanda Delivery
                 </h2>
                 <a href="#кнопка" class="btn-login btn-courier active">Подключиться</a>
             </div>

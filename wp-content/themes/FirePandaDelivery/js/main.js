@@ -27,7 +27,7 @@ function hideblocks() {
         .setAttribute("style", "display: block");
 }
 
-// плавность якорей на стр Курьер
+// плавность якорей 
 function scrollNav() {
     $('.courier-menu a')
         .click(function () {
@@ -59,7 +59,7 @@ function scrollNav() {
 }
 scrollNav();
 
-// аккордеон на странице Курьер
+// аккордеон
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {

@@ -377,7 +377,7 @@ body {
 
 /* временно */
 .info-rest-block {
-   
+   display: none;
 }
 
 /* Товары */

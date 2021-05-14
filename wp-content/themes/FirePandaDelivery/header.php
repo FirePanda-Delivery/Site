@@ -39,9 +39,7 @@
                             <a class="close" href="#"><i class="fas fa-times fa-2x"></i></a>
                         </div>
                     </div>
-                    <div class="toggle-theme">
-                        <div class="toggle"></div>
-                    </div>
+
                 </div>
 
             </div>

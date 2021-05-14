@@ -235,7 +235,6 @@
                             </div>
                         </div>
                         <p id="hide-blocks" style="display:none" onclick="hideblocks()">Скрыть</p>
-
                     </div>
                 </div>
             </div>

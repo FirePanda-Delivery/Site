@@ -592,7 +592,7 @@ p#hide-blocks {
     position: relative;
 }
 
-.fa-shopping-cart:before {
+.header-cart > .fa-shopping-cart:before {
     color: var(--light-black);
 }
 
