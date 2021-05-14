@@ -28,6 +28,7 @@ function scripts() {
 	wp_enqueue_script('slick-min-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
 	wp_enqueue_script('map-js', get_template_directory_uri() . '/js/map.js');
 	wp_enqueue_script('maskedinput-js', get_template_directory_uri() . '/js/jquery.maskedinput.min.js');
+	wp_enqueue_script('create-rest-js', get_template_directory_uri() . '/js/creating-rest.js');
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js');
 
 	if (is_front_page()) {

@@ -63,7 +63,7 @@
     <section class="restaurant">
         <div class="container">
             <div class="restaurant-block">
-                <h2>Станьте партнёром </br>сервиса FirePandaDelivery
+                <h2>Станьте партнёром </br>сервиса FirePanda Delivery
                 </h2>
                 <a href="#кнопка" class="btn-login btn-courier active">Подключиться</a>
             </div>
@@ -202,25 +202,25 @@
         </div>
     </section>
 
-    <section class="courier-form">
+    <section class="partner-form">
         <div class="container">
-            <div class="courier-block-form">
-                <form id="contact" action="" method="post">
+            <div class="partner-block-form">
+                <form id="contactPartner">
                     <h3>Заполните форму и с вами скоро свяжутся</h3>
                     <fieldset>
-                        <input placeholder="Название компании" type="text" tabindex="1" required autofocus>
+                        <input placeholder="Название компании" type="text" required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваше имя, фамилия" type="text" tabindex="1" required autofocus>
+                        <input placeholder="Ваше имя, фамилия" type="text" required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваш email" id="email" type="email" tabindex="2" required>
+                        <input placeholder="Ваш email" id="email" type="email" required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваш номер телефона" type="tel" id="phone" tabindex="3" required>
+                        <input placeholder="Ваш номер телефона" type="tel" id="phone" required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваш город" type="text" tabindex="4" required>
+                        <input placeholder="Ваш город" type="text" required>
                     </fieldset>
                     <div class="input-checkbox">
                         <input type="checkbox" name="policy" id="policy" class="policy">

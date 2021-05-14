@@ -23,8 +23,103 @@
                 <div class="search-food-block">
                     <input type="text" class="search-block search-block-eat" id="search-block-eat"
                         placeholder="Название ресторана, блюдо, кухня">
-                    <div class="search-food-btn" onclick="search()">Найти</div>
+                    <div class="search-food-btn">Найти</div>
+                    <div class="search-food-results">
+
+                        <div class="search-food-results-item">
+                            <div class="search-results-restaurant">
+                                <div class="search-results-restaurant-img"><img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" alt="">
+                                </div>
+                                <div class="search-results-restaurant-title">Бургер Кинг</div>
+                            </div>
+                            <div class="search-results-product-block">
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Бургер</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-bg.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Пицца</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-food-results-item">
+                            <div class="search-results-restaurant">
+                                <div class="search-results-restaurant-img"><img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" alt="">
+                                </div>
+                                <div class="search-results-restaurant-title">Бургер Кинг</div>
+                            </div>
+                            <div class="search-results-product-block">
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Бургер</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-bg.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Пицца</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-food-results-item">
+                            <div class="search-results-restaurant">
+                                <div class="search-results-restaurant-img"><img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" alt="">
+                                </div>
+                                <div class="search-results-restaurant-title">Бургер Кинг</div>
+                            </div>
+                            <div class="search-results-product-block">
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Бургер</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="search-results-product">
+                                    <div class="search-results-product-img"><img
+                                            src="<?php echo get_template_directory_uri(); ?>/img/restaurant-bg.jpg"
+                                            alt=""></div>
+                                    <div class="search-results-product-property">
+                                        <div class="search-results-product-title">Пицца</div>
+                                        <div class="search-results-product-price">68 <span>₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -244,13 +339,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
 </main>
 <?php get_footer();?>

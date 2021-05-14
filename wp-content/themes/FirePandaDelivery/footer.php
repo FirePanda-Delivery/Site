@@ -37,6 +37,12 @@
     </div>
 </footer>
 
+<div class="preloader">
+    <div class="preloader-container">
+        <span class="animated-preloader"></span>
+    </div>
+</div>
+
 </body>
 
 <?php wp_footer(); ?>

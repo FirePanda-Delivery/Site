@@ -36,7 +36,7 @@ let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg
 //         .setAttribute("style", "display: block");
 // }
 
-// плавность якроей на стр Курьер
+// плавность якорей 
 function scrollNav() {
     $('.courier-menu a')
         .click(function () {
@@ -68,7 +68,7 @@ function scrollNav() {
 }
 scrollNav();
 
-// аккордеон на странице Курьер
+// аккордеон
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
@@ -192,7 +192,7 @@ $(document).ready(function () {
 //     if(count < 100){
 //         number[i].innerHTML = count += 1;
 //     }
-//
+
 // }
 // minus[i].onclick = down;
 // function down() {
@@ -200,8 +200,9 @@ $(document).ready(function () {
 //     if(count > 1) {
 //         number[i].innerHTML = count -= 1;
 //     }
-//
+    
 // }
+
 
 // Переключатель темы
 
@@ -212,4 +213,18 @@ $(document).ready(function () {
 //   });
 // });
 
+
+// document.getElementById('rest-category-btn').addEventListener("click", hiddenCloseclick);
+// 	function hiddenCloseclick() {
+// 	let x = document.getElementById('hidden-rest-category');
+//       if (x.style.display == "none"){
+// 	  x.style.display = "block";
+// 	  } else {
+// 	 x.style.display = "none"}
+//     };
+
+window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
+    const preloader = document.querySelector('.preloader') /* находим блок Preloader */
+    preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
+  })
 

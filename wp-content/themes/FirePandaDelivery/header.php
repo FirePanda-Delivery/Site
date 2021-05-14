@@ -36,12 +36,10 @@
                             <div class="popup-map" id="popup-map">
                                 <div id="map"></div>
                             </div>
-                            <a class="close" href="#">&times;</a>
+                            <a class="close" href="#"><i class="fas fa-times fa-2x"></i></a>
                         </div>
                     </div>
-                    <div class="toggle-theme">
-                        <div class="toggle"></div>
-                    </div>
+
                 </div>
 
             </div>

@@ -1,4 +1,3 @@
-
 .restaurant-block {
     padding-top: 160px;
 }
@@ -6,11 +5,13 @@
 .restaurant-block a {
     margin-top: 40px;
 }
+
 .restaurant-block h2 {
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+
 .restaurant {
     background-image: url("../img/restaurant-bg.jpg");
     width: 100%;
@@ -24,13 +25,16 @@
 .restaurant-menu li {
     margin-left: 35px;
 }
+
 .restaurant-menu li:hover {
     color: var(--red);
 }
+
 .restaurant-menu {
     display: flex;
     font-weight: bold;
 }
+
 .restaurant {
     background-color: var(--light-black);
 }
@@ -38,16 +42,19 @@
 .restaurant-plug-block {
     padding: 60px 0 70px;
 }
+
 .restaurant-plug-block h2 {
     color: var(--light-black);
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+
 .restaurant-plug-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .restaurant-plug-card {
     display: flex;
     padding: 20px;
@@ -58,175 +65,78 @@
     border: 1px solid rgb(0 0 0 / 30%);
     border-left: 10px solid var(--red);
 }
+
 .restaurant-plug-number {
     font-size: 40px;
     color: var(--light-black);
     font-weight: bold;
 }
+
 .restaurant-descr-title {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
 }
+
 .restaurant-descr {
     margin: 0 15px;
 }
+
 .restaurant-advantages {
     background-color: var(--light-black);
     color: var(--white);
     padding-bottom: 30px;
 }
+
 .restaurant-advantages-items {
     display: flex;
     justify-content: space-between;
 }
+
 .restaurant-advantages-descr {
     width: 40%;
 }
-.restaurant-advantages-descr > div {
+
+.restaurant-advantages-descr>div {
     display: flex;
     margin-bottom: 30px;
 }
+
 .restaurant-advantages-descr span {
     font-weight: bold;
     line-height: 30px;
     font-size: 18px;
 }
-.restaurant-advantages-descr  i {
+
+.restaurant-advantages-descr i {
     margin-right: 20px;
 }
+
 .restaurant-advantages-block h2 {
     text-transform: uppercase;
     padding-top: 60px;
     padding-bottom: 40px;
 }
+
 .restaurant-advantages-img {
     width: 100px;
 }
+
 .restaurant-work-block {
     padding: 60px 0;
 }
-.restaurant-work-block h2{
+
+.restaurant-work-block h2 {
     color: var(--black);
     padding-bottom: 40px;
 }
+
 .restaurant-work-img {
     width: 70%;
     margin: 0 auto;
     display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.for-couriers,
-.for-restaurants,
-.support-service {
-    line-height: 26px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid var(--red);
-}
-
-.for-couriers {
-    border-bottom: none;
-}
-
-.contacts-title {
-    font-weight: bold;
-    font-size: 21px;
-    margin-bottom: 20px;
-}
-
-.support-service span {
-    font-weight: bold;
-}
-
-.contacts-block {
-    padding-top: 100px;
-}
-
-.for-couriers > .contacts-title,
-.for-restaurants {
-    margin-top: 30px;
-}
-
-.for-couriers > span,
-.for-restaurants > span {
-    color: var(--red);
-}
-
-.btn-courier {
-    width: 200px;
-    margin: 0 auto;
-}
-.btn-courier a:hover {
-    background-color: var(--dark-red);
-}
-
-.courier-advantages-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    margin: auto;
-}
-
-.courier-advantages-item {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.courier-advantages-item div {
-    width: 175px;
-}
-
-.courier-advantages-block h2 {
-    color: var(--light-black);
-}
-
-.courier-advantages-block {
-    padding: 60px 0 40px;
-}
-
-.courier-advantages-item > i {
-    margin-bottom: 30px;
-}
-
-.courier-questions-title {
-    color: var(--light-black);
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
-.courier-block-questions {
-    padding-bottom: 100px;
-}
-
-.courier-block h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
 
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;
@@ -248,11 +158,13 @@
     background: none;
     outline: none;
 }
+
 .accordion button:focus,
 .accordion button:hover {
     cursor: pointer;
     color: var(--red);
 }
+
 .accordion button:focus::after,
 .accordion button:hover::after {
     cursor: pointer;
@@ -326,50 +238,53 @@
     margin: 2em 0;
 }
 
-.courier-block-form {
-    width: 40%;
+.partner-block-form {
+    width: 500px;
     margin: auto;
     padding: 40px 0;
 }
 
-.courier-block-form h3 {
+.partner-block-form h3 {
     text-align: center;
 }
 
-#contact input {
+#contactPartner input {
     font-size: inherit;
 }
 
 .input-checkbox {
     font-size: 15px;
     margin: 15px 0;
+    font-size: 12px;
 }
 
-.courier-form {
-    background-image: url("../img/courier-1.jpg");
+.partner-form {
+    background-image: url("../img/123.jpg");
     width: 100%;
-    height: 535px;
     z-index: -1;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .policy-label a:hover {
     color: var(--red);
 }
 
-#contact {
+#contactPartner {
+    text-align: justify;
     background: #F9F9F9;
     padding: 25px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-#contact h3 {
+#contactPartner h3 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
-fieldset {
+.partner-form .fieldset {
     border: medium none !important;
     margin: 0 0 10px;
     min-width: 100%;
@@ -377,29 +292,30 @@ fieldset {
     width: 100%;
 }
 
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="text"],
-#contact input[type="url"],
-#contact textarea {
+#contactPartner input[type="email"],
+#contactPartner input[type="tel"],
+#contactPartner input[type="text"],
+#contactPartner input[type="url"],
+#contactPartner textarea {
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
 }
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="text"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
+
+#contactPartner input[type="email"]:hover,
+#contactPartner input[type="tel"]:hover,
+#contactPartner input[type="text"]:hover,
+#contactPartner input[type="url"]:hover,
+#contactPartner textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
 }
 
-#contact button[type="submit"] {
+#contactPartner button[type="submit"] {
     cursor: pointer;
     width: 100%;
     border: none;
@@ -409,18 +325,22 @@ fieldset {
     padding: 10px;
     font-size: 15px;
 }
-#contact button[type="submit"]:hover {
+
+#contactPartner button[type="submit"]:hover {
     background: var(--dark-red);
     transition: background-color 0.3s ease-in-out;
 }
-#contact button[type="submit"]:active {
+
+#contactPartner button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-#contact input:focus,
-#contact textarea:focus {
+
+#contactPartner input:focus,
+#contactPartner textarea:focus {
     outline: 0;
     border: 1px solid #aaa;
 }
+
 .overlay {
     z-index: 99999;
 }
