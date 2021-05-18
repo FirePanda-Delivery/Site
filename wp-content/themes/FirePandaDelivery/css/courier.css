@@ -34,13 +34,13 @@
     padding-top: 100px;
 }
 
-.for-couriers > .contacts-title,
+.for-couriers>.contacts-title,
 .for-restaurants {
     margin-top: 30px;
 }
 
-.for-couriers > span,
-.for-restaurants > span {
+.for-couriers>span,
+.for-restaurants>span {
     color: var(--red);
 }
 
@@ -52,6 +52,7 @@
 .courier-menu li {
     margin-left: 40px;
 }
+
 .courier-menu li:hover {
     color: var(--red);
 }
@@ -68,6 +69,7 @@
     width: 200px;
     margin: 0 auto;
 }
+
 .btn-courier a:hover {
     background-color: var(--dark-red);
 }
@@ -118,7 +120,7 @@
     margin: auto;
 }
 
- .courier-advantages-item {
+.courier-advantages-item {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -140,7 +142,7 @@
     padding: 60px 0 40px;
 }
 
-.courier-advantages-item > i {
+.courier-advantages-item>i {
     margin-bottom: 30px;
 }
 
@@ -179,11 +181,13 @@
     background: none;
     outline: none;
 }
+
 .accordion button:focus,
 .accordion button:hover {
     cursor: pointer;
     color: var(--red);
 }
+
 .accordion button:focus::after,
 .accordion button:hover::after {
     cursor: pointer;
@@ -277,13 +281,14 @@
 }
 
 .courier-form {
-    background-image: url("../img/courier-1.jpg");
+    background-image: url("../img/22.jpg");
     width: 100%;
     z-index: -1;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .policy-label a:hover {
     color: var(--red);
 }
@@ -300,7 +305,7 @@
     font-weight: bold;
 }
 
-.courier-form  .fieldset {
+.courier-form .fieldset {
     border: medium none !important;
     margin: 0 0 10px;
     min-width: 100%;
@@ -320,6 +325,7 @@
     padding: 10px;
     font-family: inherit;
 }
+
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact input[type="text"]:hover,
@@ -341,21 +347,26 @@
     padding: 10px;
     font-size: 15px;
 }
+
 #contact button[type="submit"]:hover {
     background: var(--dark-red);
     transition: background-color 0.3s ease-in-out;
 }
+
 #contact button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 #contact input:focus,
 #contact textarea:focus {
     outline: 0;
     border: 1px solid #aaa;
 }
+
 .overlay {
     z-index: 99999;
 }
+
 .mobile-menu {
     display: flex;
     align-items: center;
@@ -448,69 +459,87 @@
 .mobile-menu__checkbox {
     display: none;
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+
+.mobile-menu__checkbox:checked~.mobile-menu__nav {
     opacity: 1;
     transition-delay: 0s;
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+
+.mobile-menu__checkbox:checked~.mobile-menu__container {
     height: 100%;
     transition-delay: 0s;
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon {
     background: transparent;
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after,
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after,
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
     top: 0;
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
 @media (max-width: 1024px) {
     .courier-menu li {
         margin-left: 20px;
     }
+
     .courier-block-form {
-        width: 50%!important;
+        width: 50% !important;
     }
+
     h2 {
-        font-size: 20px!important;
+        font-size: 20px !important;
     }
+
     .courier-number {
         font-size: 40px;
     }
 }
+
 @media (max-width: 768px) {
-    .logo > img {
+    .logo>img {
         width: 160px;
     }
+
     .mobile-menu {
         display: block;
     }
+
     .courier-menu {
         display: none;
     }
+
     .courier-become-items {
         flex-wrap: wrap;
         align-items: center;
     }
+
     .btn-login {
-        width: 130px!important;
+        width: 130px !important;
     }
+
     .accordion button .accordion-title {
         padding: 5px 0px;
         font-size: 17px;
     }
+
     .courier-block-form {
-        width: 100%!important;
+        width: 100% !important;
     }
+
     #contact h3 {
-        font-size: 18px!important;
+        font-size: 18px !important;
     }
 }
 
@@ -519,4 +548,3 @@
         width: 100%;
     }
 }
-
