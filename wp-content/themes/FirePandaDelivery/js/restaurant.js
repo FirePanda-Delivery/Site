@@ -150,8 +150,7 @@ function createProductCarts(products, div) {
         let btn = document.createElement("div");
         btn.classList.add("restaurant-product-btn");
         btn.innerText = " в корзину ";
-        btn.addEventListener("click", ev =>
-            alert(ev.target.parentElement.dataset.productId));
+        btn.addEventListener("click", AddShoppingCart);
 
         productBlock.appendChild(btn);
 
@@ -172,5 +171,46 @@ function plus(element) {
     let number = element.parentElement.getElementsByClassName("number")[0];
     if (number.textContent < 100) {
         number.textContent++;
-    }}
+    }
+}
+
+function AddShoppingCart(event) {
+    let block = event.path[1];
+
+    let obj = {
+        productId: block.dataset.productId,
+        count: block.getElementsByClassName("number")[0].textContent
+    }
+
+    let cartJson = localStorage.getItem("cart");
+
+    if (!cartJson) {
+        localStorage.setItem("cart", JSON.stringify({productsList: new Array(obj), restaurantId: restaurantId}));
+    } else {
+        let cart = JSON.parse(cartJson);
+
+        if (cart.restaurantId !== restaurantId) {
+            if (confirm("в корзине есть товары из другова ресторана, если вы продолжите они будут удалены")) {
+                cart.restaurantId = restaurantId;
+                cart.productsList = [];
+            } else {
+                return;
+            }
+        }
+
+        let value = cart.productsList.find(function(item, index, array) {
+            if (item.productId === obj.productId) {
+                array[index] = obj;
+                return true;
+            }
+            return false;
+        });
+
+        if (!value) {
+            cart.productsList.push(obj);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+}
 

@@ -442,6 +442,7 @@ h4 {
     font-size: inherit;
     background: #fff;
     padding: 10px;
+    color: var(--light-black);
 }
 
 .search-wrapper {

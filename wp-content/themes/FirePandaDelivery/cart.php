@@ -4,7 +4,7 @@
         <div class="container">
             <div class="cart-wrapper">
                 <h2>Корзина</h2>
-                <div class="cart-block">
+                <div class="cart-block" id="cartBlock">
                     <div class="cart-item">
                         <div class="cart-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg"
