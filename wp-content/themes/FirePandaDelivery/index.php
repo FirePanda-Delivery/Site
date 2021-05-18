@@ -3,13 +3,13 @@
     <section class="slider-section">
         <div class="slider">
             <div class="slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/courier-1.jpg" />
+                <img class="slide-1" src="<?php echo get_template_directory_uri(); ?>/img/courier-1.jpg" />
             </div>
             <div class="slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" />
+                <img class="slide-2" src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" />
             </div>
             <div class="slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" />
+                <img class="slide-3" src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" />
             </div>
         </div>
     </section>
@@ -18,7 +18,17 @@
             <div class="main-menu-block">
                 <div class="list-food">
                     <?php wp_nav_menu("menu=Категории"); ?>
-                    <div class="btn-more">Еще</div>
+                    <div class="more-category-block">
+                        <div class="btn-more">Еще</div>
+                        <div class="more-category">
+                            <div class="more-category-item">Лапша</div>
+                            <div class="more-category-item">Курица</div>
+                            <div class="more-category-item">Супчег</div>
+                            <div class="more-category-item">Чипсеки</div>
+                            <div class="more-category-item">Самсаскурицейигрибами</div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="search-food-block">
                     <input type="text" class="search-block search-block-eat" id="search-block-eat"
