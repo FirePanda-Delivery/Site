@@ -1,5 +1,7 @@
 let textInput = document.getElementById('search');
 let textInputPopup = document.getElementById('search-block-popup');
+
+textInput.value = defaultCity
 //let city;
 
 let address = localStorage.getItem("address");

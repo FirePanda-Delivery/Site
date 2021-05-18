@@ -260,6 +260,8 @@ h4 {
     background: transparent;
     font-size: 12px;
 }
+
+
 .search-block:focus {
     color: var(--light-black);
     background: var(--white);
@@ -405,6 +407,7 @@ h4 {
     font-size: inherit;
     background: #fff;
     padding: 10px;
+    color: var(--light-black);
 }
 
 .search-wrapper {
@@ -646,7 +649,6 @@ p#hide-blocks {
     flex-direction: column;
     overflow: scroll;
     top: 41px;
-    
 }
 .search-food-results-item {
     margin-bottom: 10px;

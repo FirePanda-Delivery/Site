@@ -4,6 +4,8 @@ let url = "https://fire-panda-delivery.herokuapp.com";
 
 let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg";
 
+const defaultCity = "воронеж";
+
 
 
 
@@ -212,6 +214,8 @@ $(document).ready(function () {
 //     $('body').toggleClass('night');				
 //   });
 // });
+
+
 
 
 // document.getElementById('rest-category-btn').addEventListener("click", hiddenCloseclick);
