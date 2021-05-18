@@ -1,14 +1,4 @@
 
-//Открытие-скрытие блока с категориями
-document.getElementById('rest-category-btn').addEventListener("click", hiddenCloseclick);
-function hiddenCloseclick() {
-let x = document.getElementById('hidden-rest-category');
-  if (x.style.display == "none"){
-  x.style.display = "block";
-  } else {
- x.style.display = "none"}
-};
-
 // Превью категории в конструкторе в информации
 jQuery(document).ready(function($) {
 
@@ -218,3 +208,57 @@ function deleteProd2(){
 }
 
 
+let infoRest = document.getElementById("infoRestBlock");
+let infoCat = document.getElementById("infoRestCategory");
+let infoProd = document.getElementById("infoRestProduct");
+let infoOrd = document.getElementById("infoRestOrders");
+
+let btnRest = document.getElementById("navRestaurant");
+let btnCat = document.getElementById("navCategory");
+let btnProd = document.getElementById("navProducts");
+let btnOrd = document.getElementById("navOrders");
+
+btnRest.addEventListener('click', event => {
+    event.currentTarget.style.background = "var(--white)";
+    event.currentTarget.style.color = "var(--light-black)";
+    btnCat.style = "";
+    btnProd.style = "";
+    btnOrd.style = "";
+    infoRest.style.display = 'block';
+    infoCat.style.display = 'none';
+    infoProd.style.display = 'none';
+    infoOrd.style.display = 'none'; 
+});
+btnCat.addEventListener('click', event => {
+    event.currentTarget.style.background = "var(--white)";
+    event.currentTarget.style.color = "var(--light-black)";
+    btnRest.style = "";
+    btnProd.style = "";
+    btnOrd.style = "";
+    infoRest.style.display = 'none';
+    infoCat.style.display = 'block';
+    infoProd.style.display = 'none';
+    infoOrd.style.display = 'none'; 
+});
+btnProd.addEventListener('click', event => {
+    event.currentTarget.style.background = "var(--white)";
+    event.currentTarget.style.color = "var(--light-black)";
+    btnRest.style = "";
+    btnCat.style = "";
+    btnOrd.style = "";
+    infoRest.style.display = 'none';
+    infoCat.style.display = 'none';
+    infoProd.style.display = 'block';
+    infoOrd.style.display = 'none'; 
+});
+btnOrd.addEventListener('click', event => {
+    event.currentTarget.style.background = "var(--white)";
+    event.currentTarget.style.color = "var(--light-black)";
+    btnRest.style = "";
+    btnCat.style = "";
+    btnProd.style = "";
+    infoOrd.style.display = 'block'; 
+    infoRest.style.display = 'none';
+    infoCat.style.display = 'none';
+    infoProd.style.display = 'none';
+});

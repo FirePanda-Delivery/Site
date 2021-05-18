@@ -102,7 +102,7 @@ function seeMore() {
 
 
 function cartClick(data) {
-    location.href = "/restaurant?id=" + data.currentTarget.dataset.restaurantId;
+    location.href = "Site/restaurant?id=" + data.currentTarget.dataset.restaurantId;
 }
 
 let searchInput = document.getElementById("search-block-eat");

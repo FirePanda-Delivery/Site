@@ -17,6 +17,10 @@ function styles() {
 	wp_enqueue_style( 'creating-restaurant-css', get_template_directory_uri().'/css/creating-restaurant.css');
 	wp_enqueue_style( 'user-account-css', get_template_directory_uri().'/css/user-account.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
+	
+	if (is_page("error")) {
+        wp_enqueue_style('error-css', get_template_directory_uri() . '/css/error.css');
+    }
 }
 // регистрируем стили
 add_action('wp_enqueue_scripts', 'styles');

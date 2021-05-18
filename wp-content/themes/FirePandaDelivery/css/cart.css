@@ -39,6 +39,7 @@
 .cart-product-features {
     display: flex;
     flex-direction: column;
+    width: 250px;
 }
 
 .cart-product-title {
@@ -46,8 +47,13 @@
     margin-bottom: 10px;
 }
 
+.cart-product-price {
+    width: 90px;
+}
+
 .cart-product-sum {
     font-weight: bold;
+    width: 100px;
 }
 
 .cart-product-delete {

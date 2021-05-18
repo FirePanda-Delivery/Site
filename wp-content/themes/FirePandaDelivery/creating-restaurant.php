@@ -23,27 +23,28 @@
                 <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype2.svg" alt="logo"></a>
             </header>
             <ul class="nav">
-                <li>
+                <li id="navRestaurant">
                     <a href="#">
-                        <i class="zmdi zmdi-view-dashboard"></i>
                         Ресторан
                     </a>
                 </li>
-                <li>
+                <li id="navCategory">
                     <a href="#">
-                        <i class="zmdi zmdi-link"></i>
+                        Категории
+                    </a>
+                </li>
+                <li id="navProducts">
+                    <a href="#">
                         Товары
                     </a>
                 </li>
-                <li>
+                <li id="navOrders">
                     <a href="#">
-                        <i class="zmdi zmdi-widgets"></i>
                         Заказы
                     </a>
                 </li>
-                <li>
+                <li id="navExit">
                     <a href="#">
-                        <i class="zmdi zmdi-calendar"></i>
                         Выход
                     </a>
                 </li>
@@ -52,7 +53,8 @@
         <!-- Content -->
         <div id="content-prod">
             <div class="container-fluid">
-                <div class="info-rest-block">
+                <div class="info-rest-block" id="infoRestBlock">
+                    <h2>Информация о ресторане</h2>
                     <div class="info-rest-wrap-form">
                         <form id="info-rest-form">
 
@@ -78,13 +80,21 @@
                                 <div>до</div>
                                 <input placeholder="Время работы" type="time" required>
                             </fieldset>
-                            <a href="#" id="rest-category-btn">Категории товаров</a>
-                            <button name="submit" type="submit" class="btn" id="user-contact-submit"
-                                data-submit="...Sending">сохранить</button>
+                            <fieldset class="info-rest-btns">
+                                <button name="info-rest-save" type="submit" class="btn"
+                                    id="info-rest-save">сохранить</button>
+                                <button name="info-rest-send" type="submit" class="btn"
+                                    id="info-rest-send">отправить</button>
+                            </fieldset>
+
                         </form>
                     </div>
-                    <div class="info-rest-cat-create" id="hidden-rest-category">
-                        <div class="info-rest-category">
+
+                </div>
+                <div class="info-rest-category" id="infoRestCategory">
+                    <h2>Категории товаров</h2>
+                    <div class=" info-rest-cat-create">
+                        <div class="info-rest-category-wrap">
                             <div class="category-create-item">
                                 <div class="category-name">Категория</div>
                                 <i class="fas fa-trash" onclick="swa()" type="button"></i>
@@ -127,8 +137,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="info-rest-product">
+                <div class="info-rest-product" id="infoRestProduct">
+                    <h2>товары</h2>
                     <div class="info-rest-product-wrap">
                         <form id="createProduct">
 
@@ -338,6 +348,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="info-rest-orders" id="infoRestOrders">
+
                 </div>
 
 

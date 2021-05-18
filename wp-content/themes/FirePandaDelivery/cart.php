@@ -11,7 +11,7 @@
                                 alt="cart-image">
                         </div>
                         <div class="cart-product-features">
-                            <div class="cart-product-title">Бургер Биг</div>
+                            <div class="cart-product-title">БургерБигБургер Биг Бургер Биг Бургер Биг</div>
                             <div class="cart-product-weight">170 <span>г</span></div>
                         </div>
                         <div class="cart-product-price">68 <span>руб</span></div>
@@ -30,7 +30,7 @@
                                 alt="cart-image">
                         </div>
                         <div class="cart-product-features">
-                            <div class="cart-product-title">Бургер Биг</div>
+                            <div class="cart-product-title">Бургер Биг Бургер Биг</div>
                             <div class="cart-product-weight">170 <span>г</span></div>
                         </div>
                         <div class="cart-product-price">68 <span>руб</span></div>

@@ -108,7 +108,7 @@ h4 {
 }
 
 .slider-section {
-    margin-top: 105px;
+    margin-top: 135px;
 }
 
 .header-bottom-wrapp {
@@ -785,7 +785,6 @@ p#hide-blocks {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #666565;
 }
-
 
 
 /*медиазапросы*/

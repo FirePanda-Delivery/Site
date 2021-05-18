@@ -21,7 +21,8 @@ Template Name: Ошибка
 
 <body>
     <section class="error">
-        <h1>Что-то пошло не так...</h1>
+        <h1>Ой! Что-то пошло не так...</h1>
+        <a href="/">Вернуться на главную</a>
     </section>
 
 </body>
