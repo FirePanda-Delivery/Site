@@ -8,14 +8,15 @@ Description: Индивидуальный шаблон разработан дл
 /* CSS переменные */
 :root {
     /*Цвета*/
-    --black: #000000;
-    --light-black: #1f1f1f;
+    --light-black: #141414;
+    --gray: #a2a2a2;
     --white: #ffffff;
     --red: #C43030;
     --dark-red: #800606;
-    --light-red: #E84545;
     --orange: #EA5B0C;
-
+    /* --light-black: #1f1f1f; */
+    /* --light-red: #E84545; */
+    /* --black: #000000; */
 
     /*Руководство по стилям*/
     --title-color: var(--light-black);
@@ -74,6 +75,7 @@ h2 {
     font-size: 30px;
     line-height: 38px;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 h4 {
@@ -89,6 +91,31 @@ h4 {
     margin: auto;
 }
 
+#header-main {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+#header-user {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+.slider-section {
+    margin-top: 105px;
+}
+
+.header-bottom-wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-top {
     background-color: var(--light-black);
     width: 100%;
@@ -97,6 +124,22 @@ h4 {
 .header-bottom {
     width: 100%;
     background-color: var(--white);
+}
+
+.btn {
+    background: var(--red);
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: var(--dark-red);
 }
 
 .btn-login {
@@ -114,6 +157,34 @@ h4 {
     justify-content: center;
 }
 
+.btn-login:hover {
+    background-color: var(--dark-red);
+}
+
+.search-food-btn {
+    background: var(--red);
+    width: 130px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-food-btn:hover {
+    background: var(--dark-red);
+}
+
+.search-food-block {
+    display: flex;
+    position: relative;
+}
+
 .header-bottom-block {
     display: flex;
     flex-direction: row;
@@ -123,8 +194,9 @@ h4 {
 
 }
 
-.logo>img {
+.logo>a>img {
     width: 230px;
+    cursor: pointer;
 }
 
 .header-top-block {
@@ -147,7 +219,7 @@ h4 {
     font-weight: bold;
     font-size: 18px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: var(--white);
     text-transform: uppercase;
     margin-right: 15px;
     transition: all 0.2s ease-in-out;
@@ -184,6 +256,33 @@ h4 {
 .btn-more:hover {
     color: var(--red);
     border-color: var(--red);
+}
+
+.more-category-block {
+    position: relative;
+}
+
+.more-category {
+    background-color: var(--white);
+    padding: 10px;
+    position: absolute;
+    z-index: 9999;
+    right: 0px;
+    display: none;
+}
+
+.more-category-item {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+    color: var(--light-black);
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.more-category-item:hover {
+    color: var(--red);
 }
 
 .search-block {
@@ -280,7 +379,7 @@ h4 {
 
 .popup {
     margin: 87px auto 70px;
-    padding: 27px 20px 20px;
+    padding: 40px 20px 20px;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -291,14 +390,12 @@ h4 {
 
 .popup .close {
     position: absolute;
-    top: -3px;
-    right: 5px;
+    top: 2px;
+    right: 10px;
     transition: all 200ms;
-    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
-
+    color: var(--light-black);
 }
 
 .popup .close:hover {
@@ -344,6 +441,7 @@ h4 {
 .search-block-eat {
     font-size: inherit;
     background: #fff;
+    padding: 10px;
 }
 
 .search-wrapper {
@@ -374,25 +472,28 @@ h4 {
 
 .slide {
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
-.slide img {
+/* .{
     width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.slide img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100%;
 }
 
-/*.btn-restaurants-more {*/
-/*    width: 100%;*/
-/*    padding: 15px;*/
-/*    color: var(--white);*/
-/*    background-color: var(--red);*/
-/*    text-align: center;*/
-/*    transition: all 0.2s ease-in-out;*/
-/*}*/
-/*.btn-restaurants-more:hover {*/
-/*    background-color: var(--dark-red);*/
-/*}*/
+
 #see-more {
     width: 100%;
     padding: 15px;
@@ -493,6 +594,7 @@ p#hide-blocks {
 
 .contacts {
     background-color: var(--light-black);
+    padding-top: 135px;
 }
 
 .contacts-block-information {
@@ -501,12 +603,187 @@ p#hide-blocks {
     margin-top: 30px;
 }
 
+.header-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.header-avatar img {
+    width: 100%;
+    cursor: pointer;
+}
 
+.header-bottom-user {
+    display: flex;
+    align-items: center;
+}
 
+.header-cart {
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
 
+.header-cart>.fa-shopping-cart:before {
+    color: var(--light-black);
+}
 
+.header-cart-count {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--red);
+    z-index: 999;
+    top: -5px;
+    right: -3px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
 
+.toggle-theme {
+    position: relative;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.toggle {
+    /* position: absolute;
+    top: 40px;
+    right: 50px; */
+    background: #FFF;
+    border: 2px solid #00151f;
+    height: 20px;
+    width: 45px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before {
+    left: 27px;
+    background: #FFF;
+}
+
+.toggle.active {
+    background: #00151f;
+    border: 2px solid #FFF;
+}
+
+.search-food-results {
+    background-color: var(--white);
+    max-height: 400px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    top: 42px;
+    padding: 15px 20px;
+}
+
+.search-food-results-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 15px;
+}
+
+.search-results-restaurant {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.search-results-product-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.search-results-product {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-results-product-property {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.search-results-restaurant-img>img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    z-index: -1;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+.search-results-restaurant-title {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.search-results-product-img>img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    z-index: -1;
+    background-position: center center;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+}
+
+.search-results-product-title {
+    margin-bottom: 7px;
+}
+
+.search-results-product-price {
+    color: var(--gray);
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    /* border-radius: 9em; */
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666565;
+}
 
 
 
@@ -538,6 +815,15 @@ p#hide-blocks {
         padding-right: 40px;
         margin: auto;
     }
+
+    .list-restaurants-cards {
+        justify-content: space-around;
+    }
+
+    .card-restaurant {
+        width: 300px;
+    }
+
 }
 
 /*mobile*/
@@ -546,8 +832,248 @@ p#hide-blocks {
         padding-left: 30px;
         padding-right: 30px;
     }
+}
 
-    .list-restaurants-cards {
-        justify-content: center;
+@media (max-width: 700px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
+
+    .footer-top-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-top-block>div {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-bottom-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo>img {
+        width: 170px;
+    }
+
+    .btn-login {
+        width: 110px;
+    }
+
+    .list-food {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .list-food ul li {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .list-food ul {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.preloader {
+
+    /* Фиксируем блок на всю ширину и высоту окна, чтобы перекрывать все остальные элементы */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+    /* Центрируем анимацию Preloader */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* При загрузке страницы, Preloader сразу отображается */
+    opacity: 1;
+    visibility: visible;
+
+    /* Добавляем затемнение */
+    background: rgba(18, 18, 18, 0.64);
+
+    /* Добавляем плавный переход */
+    transition: opacity 1s, visibility 0s 0s;
+}
+
+/* Класс для скрытия Preloader */
+.preloader_hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 0s 1s;
+}
+
+@-webkit-keyframes preloader-inside-white {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes preloader-inside-white {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes preloader-inside-red {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    30% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes preloader-inside-red {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    30% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+/* Styles */
+.preloader {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: white;
+    text-align: center;
+}
+
+.preloader .preloader-container {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 44%;
+    left: 0;
+    position: relative;
+}
+
+.preloader .preloader-container .animated-preloader {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--red);
+    border-radius: 50em;
+}
+
+.preloader .preloader-container .animated-preloader:after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50em;
+    background: white;
+    -webkit-animation: preloader-inside-white 1s ease-in-out infinite;
+    -ms-animation: preloader-inside-white 1s ease-in-out infinite;
+    animation: preloader-inside-white 1s ease-in-out infinite;
+}
+
+.preloader .preloader-container .animated-preloader:before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-radius: 50em;
+    background: var(--red);
+    -webkit-animation: preloader-inside-red 1s ease-in-out infinite;
+    -ms-animation: preloader-inside-red 1s ease-in-out infinite;
+    animation: preloader-inside-red 1s ease-in-out infinite;
 }

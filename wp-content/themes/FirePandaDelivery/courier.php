@@ -37,14 +37,38 @@
     </div>
     <div class="header-bottom">
         <div class="container">
+
             <div class="header-bottom-block">
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" alt="logo">
-                </div>
+                <div class="logo"><a href="/Site"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a></div>
                 <ul class="courier-menu">
-                    <li><a href="#преимущества" class="active">Преимущества</a></li>
-                    <li><a href="#стать" class="active">Как стать курьером</a></li>
-                    <li><a href="#вопросы" class="active">Часто задаваемые вопросы</a></li>
+                    <li>
+                        <a href="#преимущества" class="active">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#стать" class="active">Как стать курьером</a>
+                    </li>
+                    <li>
+                        <a href="#вопросы" class="active">Часто задаваемые вопросы</a>
+                    </li>
                 </ul>
+                <nav class="mobile-menu">
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn">
+                        <div class="mobile-menu__icon"></div>
+                    </label>
+                    <div class="mobile-menu__container">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="#преимущества"
+                                    class="mobile-menu__link">Преимущества</a></li>
+                            <li class="mobile-menu__item"><a href="#стать" class="mobile-menu__link">Как стать
+                                    курьером</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="#вопросы" class="mobile-menu__link">Часто задаваемые
+                                    вопросы</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
 
         </div>
@@ -54,8 +78,9 @@
     <section class="courier">
         <div class="container">
             <div class="courier-block">
-                <h2>СТАНЬ КУРЬЕРОМ</br> ПО ДОСТАВКЕ ЕДЫ</h2>
-                <a href="#кнопка" class="btn-login btn-courier active">Стать курьером</a>
+                <h2>СТАНЬ КУРЬЕРОМ</br>
+                    ПО ДОСТАВКЕ ЕДЫ</h2>
+                <a href="#" class="btn-login btn-courier active">Стать курьером</a>
             </div>
         </div>
     </section>
@@ -74,7 +99,8 @@
                     </div>
                     <div class="courier-advantages-item">
                         <i class="fas fa-pizza-slice fa-3x"></i>
-                        <div>Скидки на еду </div>
+                        <div>Скидки на еду
+                        </div>
                     </div>
                     <div class="courier-advantages-item">
                         <i class="far fa-calendar-alt fa-3x"></i>
@@ -114,19 +140,18 @@
         </div>
     </section>
     <section class="courier-form">
-        <a name="1"></a>
         <div class="container">
-            <div class="courier-block-form" id="кнопка">
+            <div class="courier-block-form">
                 <form id="contact" action="" method="post">
                     <h3>Заполните форму и с вами скоро свяжутся</h3>
                     <fieldset>
                         <input placeholder="Ваше имя" type="text" tabindex="1" required autofocus>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваш email" type="email" tabindex="2" required>
+                        <input placeholder="Ваш email" id="email" type="email" tabindex="2" required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Ваш номер телефона" type="tel" tabindex="3" required>
+                        <input placeholder="Ваш номер телефона" type="tel" id="phone" tabindex="3" required>
                     </fieldset>
                     <fieldset>
                         <input placeholder="Ваш город" type="text" tabindex="4" required>
@@ -134,8 +159,8 @@
                     <div class="input-checkbox">
                         <input type="checkbox" name="policy" id="policy" class="policy">
                         <label for="policy" class="policy-label">
-                            Я принимаю условия <a href="#" target="_blank">Пользовательского
-                                соглашения</a>
+                            Я принимаю условия
+                            <a href="#" target="_blank">Пользовательского соглашения</a>
                         </label>
                     </div>
                     <fieldset>
@@ -143,7 +168,6 @@
                             data-submit="...Sending">отправить</button>
                     </fieldset>
                 </form>
-
 
             </div>
         </div>
@@ -154,49 +178,56 @@
                 <h2 class="courier-questions-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
                 <div class="accordion">
                     <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is
-                                the moon sometimes out during the day?</span><span class="icon"
-                                aria-hidden="true"></span></button>
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">У меня есть основное место работы, можно ли совмещать?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
-                                ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>
+                                Да, обычно курьеры могут совмещать основную работу с подработкой.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is
-                                the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">Можно ли выполнять заказы по выходным?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
-                                ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>
+                                Да, вы сами выбираете доступное время и районы.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we
-                                ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">Выдают ли одежду с логотипом?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
-                                ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>
+                                Курьерская служба предоставит вам красную одежду с логотипом сервиса после начала
+                                сотрудничества. Не забывайте надевать её на заказы.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much
-                                does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-4" aria-expanded="false">
+                            <span class="accordion-title">Какие документы нужны для оформления?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
-                                ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>Гражданам РФ: паспорт с пропиской и медицинская книжка.</p>
+                            <p>Другое гражданство: паспорт, регистрация, медицинская книжка, миграционная карта с целью
+                                въезда «Работа», СНИЛС, ИНН, ДМС (медицинская страховка). А также ВНЖ, патент с чеками
+                                или РВП для города, в котором вы хотите работать.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do
-                                airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-5" aria-expanded="false">
+                            <span class="accordion-title">Есть ли страхование во время выполнения заказов?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis
-                                ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>Да — страховое возмещение можно получить в случае серьёзных травм, которые случились с
+                                вами во время слота. За информацией нужно будет обратиться в службу поддержки.</p>
                         </div>
                     </div>
                 </div>
@@ -204,5 +235,6 @@
         </div>
 
     </section>
+
 </main>
 <?php get_footer();?>

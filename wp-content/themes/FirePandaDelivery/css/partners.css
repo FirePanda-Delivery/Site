@@ -1,0 +1,346 @@
+.restaurant-block {
+    padding-top: 160px;
+}
+
+.restaurant-block a {
+    margin-top: 40px;
+}
+
+.restaurant-block h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.restaurant {
+    background-image: url("../img/restaurant-bg.jpg");
+    width: 100%;
+    height: 460px;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurant-menu li {
+    margin-left: 35px;
+}
+
+.restaurant-menu li:hover {
+    color: var(--red);
+}
+
+.restaurant-menu {
+    display: flex;
+    font-weight: bold;
+}
+
+.restaurant {
+    background-color: var(--light-black);
+}
+
+.restaurant-plug-block {
+    padding: 60px 0 70px;
+}
+
+.restaurant-plug-block h2 {
+    color: var(--light-black);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.restaurant-plug-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurant-plug-card {
+    display: flex;
+    padding: 20px;
+    max-width: 400px;
+    align-items: flex-start;
+    margin-top: 45px;
+    /* box-shadow: 0 0 5px 5px rgb(0 0 0 / 15%); */
+    border: 1px solid rgb(0 0 0 / 30%);
+    border-left: 10px solid var(--red);
+}
+
+.restaurant-plug-number {
+    font-size: 40px;
+    color: var(--light-black);
+    font-weight: bold;
+}
+
+.restaurant-descr-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.restaurant-descr {
+    margin: 0 15px;
+}
+
+.restaurant-advantages {
+    background-color: var(--light-black);
+    color: var(--white);
+    padding-bottom: 30px;
+}
+
+.restaurant-advantages-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-advantages-descr {
+    width: 40%;
+}
+
+.restaurant-advantages-descr>div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.restaurant-advantages-descr span {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.restaurant-advantages-descr i {
+    margin-right: 20px;
+}
+
+.restaurant-advantages-block h2 {
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.restaurant-advantages-img {
+    width: 100px;
+}
+
+.restaurant-work-block {
+    padding: 60px 0;
+}
+
+.restaurant-work-block h2 {
+    color: var(--black);
+    padding-bottom: 40px;
+}
+
+.restaurant-work-img {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid var(--red);
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:focus,
+.accordion button:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+.accordion button:focus::after,
+.accordion button:hover::after {
+    cursor: pointer;
+    color: var(--red);
+    border: 1px solid var(--red);
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: var(--red);
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+
+.partner-block-form {
+    width: 500px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.partner-block-form h3 {
+    text-align: center;
+}
+
+#contactPartner input {
+    font-size: inherit;
+}
+
+.input-checkbox {
+    font-size: 15px;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.partner-form {
+    background-image: url("../img/123.jpg");
+    width: 100%;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.policy-label a:hover {
+    color: var(--red);
+}
+
+#contactPartner {
+    text-align: justify;
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contactPartner h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.partner-form .fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contactPartner input[type="email"],
+#contactPartner input[type="tel"],
+#contactPartner input[type="text"],
+#contactPartner input[type="url"],
+#contactPartner textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contactPartner input[type="email"]:hover,
+#contactPartner input[type="tel"]:hover,
+#contactPartner input[type="text"]:hover,
+#contactPartner input[type="url"]:hover,
+#contactPartner textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contactPartner button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--red);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contactPartner button[type="submit"]:hover {
+    background: var(--dark-red);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contactPartner button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contactPartner input:focus,
+#contactPartner textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+.overlay {
+    z-index: 99999;
+}

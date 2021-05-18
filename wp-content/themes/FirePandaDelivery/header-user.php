@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header id="header-main" class="header">
+    <header id="header-user" class="header">
         <div class="header-top">
             <div class="container">
                 <div class="header-top-block">
@@ -36,22 +36,31 @@
                             <div class="popup-map" id="popup-map">
                                 <div id="map"></div>
                             </div>
-                            <a class="close" href="#"><i class="fas fa-times fa-2x"></i></a>
+                            <a class="close" href="#">&times;</a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="header-bottom-block">
-                    <div class="logo"><a href="/"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a></div>
-                    <div class="btn-login">Войти</div>
+                <div class="header-bottom-wrapp">
+                    <div class="header-bottom-block">
+                        <div class="logo"><a href="/Site"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="header-bottom-user">
+                        <div class="header-cart">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <div class="header-cart-count">1</div>
+                        </div>
+                        <div class="header-avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/avatar.png"
+                                alt="avatar"></div>
+                    </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </header>

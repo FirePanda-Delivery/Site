@@ -65,10 +65,6 @@
     margin-top: 40px;
 }
 
-.courier {
-    height: 500px;
-}
-
 .btn-courier {
     width: 200px;
     margin: 0 auto;
@@ -112,6 +108,7 @@
 
 .courier-become-block {
     padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .courier-advantages-items {
@@ -142,7 +139,7 @@
 }
 
 .courier-advantages-block {
-    padding: 60px 0 40px 0;
+    padding: 60px 0 40px;
 }
 
 .courier-advantages-item>i {
@@ -284,9 +281,8 @@
 }
 
 .courier-form {
-    background-image: url("../img/courier-1.jpg");
+    background-image: url("../img/22.jpg");
     width: 100%;
-    height: 535px;
     z-index: -1;
     background-position: center center;
     background-size: cover;
@@ -306,9 +302,10 @@
 #contact h3 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
-fieldset {
+.courier-form .fieldset {
     border: medium none !important;
     margin: 0 0 10px;
     min-width: 100%;
@@ -316,9 +313,9 @@ fieldset {
     width: 100%;
 }
 
-#contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
+#contact input[type="text"],
 #contact input[type="url"],
 #contact textarea {
     width: 100%;
@@ -326,23 +323,18 @@ fieldset {
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
+    font-family: inherit;
 }
 
-#contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
+#contact input[type="text"]:hover,
 #contact input[type="url"]:hover,
 #contact textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
-}
-
-#contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
 }
 
 #contact button[type="submit"] {
@@ -369,4 +361,190 @@ fieldset {
 #contact textarea:focus {
     outline: 0;
     border: 1px solid #aaa;
+}
+
+.overlay {
+    z-index: 99999;
+}
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    display: none;
+}
+
+.mobile-menu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.mobile-menu__icon {
+    display: block;
+    position: relative;
+    background: var(--black);
+    width: 90%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+.mobile-menu__icon::after,
+.mobile-menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: var(--black);
+    width: 100%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+.mobile-menu__icon::after {
+    top: 8px;
+}
+
+.mobile-menu__icon::before {
+    top: -8px;
+}
+
+.mobile-menu__container {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 0;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    overflow: hidden;
+    background-color: var(--white);
+    top: 120px;
+}
+
+.mobile-menu__list {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.mobile-menu__item {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile-menu__checkbox {
+    display: none;
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__nav {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__container {
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon {
+    background: transparent;
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after,
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
+    top: 0;
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.mobile-menu__checkbox:checked~.mobile-menu__btn .mobile-menu__icon::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+    .courier-menu li {
+        margin-left: 20px;
+    }
+
+    .courier-block-form {
+        width: 50% !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    .courier-number {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo>img {
+        width: 160px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .courier-menu {
+        display: none;
+    }
+
+    .courier-become-items {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .btn-login {
+        width: 130px !important;
+    }
+
+    .accordion button .accordion-title {
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+
+    .courier-block-form {
+        width: 100% !important;
+    }
+
+    #contact h3 {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .courier-advantages-item {
+        width: 100%;
+    }
 }

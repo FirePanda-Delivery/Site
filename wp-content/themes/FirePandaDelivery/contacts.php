@@ -21,7 +21,7 @@
                     <div class="for-couriers">
                         <div class="contacts-title">Для курьеров</div>
                         Если вы хотите работать курьером по доставке еды, <span><a
-                                href="http://firepanda/Site/courier#1">заполните
+                                href="http://firepanda/Site/courier">заполните
                                 форму</a></span>.</br>
                         Или звоните по будням с 10:00 до 19:00 по московскому времени по телефону 8 (910) 284-02-71
                     </div>
