@@ -183,7 +183,7 @@ jQuery(document).ready(function($) {
 
 });
 
-// модальное окно в конструкторе ресторана
+// модальное окно в конструкторе ресторана Удаление категории
 var b = document.getElementById('overlay-cat');
 function swa(){
 	b.style.visibility = 'visible';
@@ -195,7 +195,7 @@ function swa2(){
 	b.style.opacity = '0';
 }
 
-// модальное окно в конструкторе ресторана
+// модальное окно в конструкторе ресторана Удаление товара
 var c = document.getElementById('overlayProd');
 function deleteProd(){
 	c.style.visibility = 'visible';
@@ -206,8 +206,19 @@ function deleteProd2(){
 	c.style.visibility = 'hidden';
 	c.style.opacity = '0';
 }
+// модальное окно в конструкторе ресторана Выход
+var c = document.getElementById('overlayExit');
+function deleteExite(){
+	c.style.visibility = 'visible';
+	c.style.opacity = '1';
+	c.style.transition = 'all 0.3s ease-out 0s';
+}
+function deleteExite2(){
+	c.style.visibility = 'hidden';
+	c.style.opacity = '0';
+}
 
-
+// перключение блоков
 let infoRest = document.getElementById("infoRestBlock");
 let infoCat = document.getElementById("infoRestCategory");
 let infoProd = document.getElementById("infoRestProduct");

@@ -3,13 +3,13 @@
     <section class="slider-section">
         <div class="slider">
             <div class="slide">
-                <img class="slide-1" src="<?php echo get_template_directory_uri(); ?>/img/courier-1.jpg" />
+                <img class="slide-1" src="<?php echo get_template_directory_uri(); ?>/img/main-bg-1.jpg" />
             </div>
             <div class="slide">
-                <img class="slide-2" src="<?php echo get_template_directory_uri(); ?>/img/logotype.png" />
+                <img class="slide-2" src="<?php echo get_template_directory_uri(); ?>/img/main-bg-2.jpg" />
             </div>
             <div class="slide">
-                <img class="slide-3" src="<?php echo get_template_directory_uri(); ?>/img/restaurant-1.jpg" />
+                <img class="slide-3" src="<?php echo get_template_directory_uri(); ?>/img/main-bg-3.jpg" />
             </div>
         </div>
     </section>
@@ -36,96 +36,105 @@
                     <div class="search-food-btn">Найти</div>
                     <div class="search-food-results" id="searchResult" style="display: none">
 
-<!--                        <div class="search-food-results-item">-->
-<!--                            <div class="search-results-restaurant">-->
-<!--                                <div class="search-results-restaurant-img"><img-->
-<!--                                        src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-1.jpg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
-<!--                            </div>-->
-<!--                            <div class="search-results-product-block">-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-product.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Бургер</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-bg.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Пицца</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="search-food-results-item">-->
-<!--                            <div class="search-results-restaurant">-->
-<!--                                <div class="search-results-restaurant-img"><img-->
-<!--                                        src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-1.jpg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
-<!--                            </div>-->
-<!--                            <div class="search-results-product-block">-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-product.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Бургер</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-bg.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Пицца</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="search-food-results-item">-->
-<!--                            <div class="search-results-restaurant">-->
-<!--                                <div class="search-results-restaurant-img"><img-->
-<!--                                        src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-1.jpg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
-<!--                            </div>-->
-<!--                            <div class="search-results-product-block">-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-product.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Бургер</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!---->
-<!--                                <div class="search-results-product">-->
-<!--                                    <div class="search-results-product-img"><img-->
-<!--                                            src="--><?php //echo get_template_directory_uri(); ?><!--/img/restaurant-bg.jpg"-->
-<!--                                            alt=""></div>-->
-<!--                                    <div class="search-results-product-property">-->
-<!--                                        <div class="search-results-product-title">Пицца</div>-->
-<!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="search-food-results-item">-->
+                        <!--                            <div class="search-results-restaurant">-->
+                        <!--                                <div class="search-results-restaurant-img"><img-->
+                        <!--                                        src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-1.jpg" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="search-results-product-block">-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-product.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Бургер</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-bg.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Пицца</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="search-food-results-item">-->
+                        <!--                            <div class="search-results-restaurant">-->
+                        <!--                                <div class="search-results-restaurant-img"><img-->
+                        <!--                                        src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-1.jpg" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="search-results-product-block">-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-product.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Бургер</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-bg.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Пицца</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="search-food-results-item">-->
+                        <!--                            <div class="search-results-restaurant">-->
+                        <!--                                <div class="search-results-restaurant-img"><img-->
+                        <!--                                        src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-1.jpg" alt="">-->
+                        <!--                                </div>-->
+                        <!--                                <div class="search-results-restaurant-title">Бургер Кинг</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="search-results-product-block">-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-product.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Бургер</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!---->
+                        <!--                                <div class="search-results-product">-->
+                        <!--                                    <div class="search-results-product-img"><img-->
+                        <!--                                            src="--><?php //echo get_template_directory_uri(); ?>
+                        <!--/img/restaurant-bg.jpg"-->
+                        <!--                                            alt=""></div>-->
+                        <!--                                    <div class="search-results-product-property">-->
+                        <!--                                        <div class="search-results-product-title">Пицца</div>-->
+                        <!--                                        <div class="search-results-product-price">68 <span>₽</span></div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
 
                     </div>
                 </div>

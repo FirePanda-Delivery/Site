@@ -1,6 +1,6 @@
 .user-account {
     background-color: var(--light-black);
-    padding-top: 250px;
+    padding-top: 180px;
 }
 
 .user-acc-block {
@@ -31,11 +31,31 @@
 .user-acc-profile {
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 50%;
-   
+    width: 60%;
 }
+
+.user-acc-my-sales {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60%;
+}
+
+.user-acc-my-sales h4 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+
 .user-acc-my-orders {
-display: none;
+    display: none;
+}
+
+.user-acc-my-sales {
+    display: none;
+}
+
+.user-acc-my-exit {
+    display: none;
 }
 
 .user-acc-my-orders {
@@ -43,9 +63,11 @@ display: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 60%;
 }
-.user-acc-my-orders h4{
-color: var(--white);
+
+.user-acc-my-orders h4 {
+    color: var(--white);
 }
+
 .user-acc-profile h4 {
     color: var(--white);
     margin-bottom: 15px;
@@ -60,6 +82,7 @@ color: var(--white);
 .user-acc-sidebar-top ul li {
     font-weight: bold;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .discount-label {
@@ -99,34 +122,41 @@ color: var(--white);
     color: var(--white);
     font-weight: bold;
 }
+
 .order-top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
+
 .order-resraurant-date {
     font-size: 13px;
     margin-bottom: 6px;
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 .order-resraurant-number {
     font-size: 12px;
     letter-spacing: 2px;
     color: var(--gray);
 }
+
 .order-resraurant-name {
     font-weight: bold;
     margin-bottom: 15px;
     font-size: 22px;
 }
+
 .order-product {
     font-size: 18px;
     max-width: 350px;
 }
+
 .order-product-count {
     color: var(--gray);
 }
+
 .order-bottom-block {
     display: flex;
     justify-content: space-between;
@@ -137,6 +167,7 @@ color: var(--white);
     display: flex;
     flex-direction: column;
 }
+
 .order-block {
     display: flex;
     flex-direction: column;
@@ -144,12 +175,98 @@ color: var(--white);
     padding-top: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .user-acc-avatar img {
     width: 200px;
     height: 200px;
     background-color: #000;
 }
+
 .user-acc-sidebar-top ul li:hover {
     color: var(--red);
 }
 
+#overlayUserAccExit fieldset {
+    margin: 0;
+}
+
+#overlayUserAccExit .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#overlayUserAccExit .btn-cancel {
+    border: none;
+    margin-right: 10px;
+    padding: 5px 7px;
+}
+
+#overlayUserAccExit .btn-delete {
+    background-color: var(--light-black) !important;
+    border: none;
+    padding: 5px 7px;
+}
+
+#overlayUserAccExit .btn-delete:hover {
+    background-color: var(--pale-black) !important;
+}
+
+#overlayUserAccExit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in 0s;
+}
+
+#overlayUserAccExit .popup {
+    height: 160px;
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    margin: auto;
+    width: 80%;
+    min-width: 200px;
+    max-width: 600px;
+    position: absolute;
+    padding: 10px 20px !important;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 0 14px rgb(0 0 0 / 40%);
+    margin-top: 150px;
+}
+
+#overlayUserAccExit .close-cat {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+#overlayUserAccExit .popup p.zag {
+    margin: 40px 0 10px;
+    padding: 0 0 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--gray);
+}
+
+#overlayUserAccExit .popup .close-cat {
+    position: absolute;
+    font-weight: bold;
+}
+
+#overlayUserAccExit .popup .close-cat:hover {
+    color: var(--red);
+}

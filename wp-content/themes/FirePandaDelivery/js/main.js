@@ -2,7 +2,7 @@
 let url = "https://fire-panda-delivery.herokuapp.com";
 //let url = "http://localhost:8070";
 
-let starUrl = "http://firepanda/Site/wp-content/themes/FirePandaDelivery/img/star.svg";
+let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg";
 
 const defaultCity = "Воронеж";
 

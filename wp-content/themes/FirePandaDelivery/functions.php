@@ -34,8 +34,9 @@ function scripts() {
 	wp_enqueue_script('map-js', get_template_directory_uri() . '/js/map.js');
 	wp_enqueue_script('maskedinput-js', get_template_directory_uri() . '/js/jquery.maskedinput.min.js');
 	wp_enqueue_script('create-rest-js', get_template_directory_uri() . '/js/creating-rest.js');
+	wp_enqueue_script('user-acc-js', get_template_directory_uri() . '/js/user-acc.js');
 
-
+	
 	if (is_front_page()) {
         wp_enqueue_script('index-js', get_template_directory_uri() . '/js/index.js');
     }
@@ -47,6 +48,7 @@ function scripts() {
 	if (is_page("cart")) {
         wp_enqueue_script('cart-js', get_template_directory_uri() . '/js/cart.js');
     }
+
 
 
 }

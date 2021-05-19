@@ -43,7 +43,7 @@
                         Заказы
                     </a>
                 </li>
-                <li id="navExit">
+                <li id="navExit" onclick="deleteExite()">
                     <a href="#">
                         Выход
                     </a>
@@ -350,11 +350,131 @@
                     </div>
                 </div>
                 <div class="info-rest-orders" id="infoRestOrders">
+                    <h2>Заказы в процессе</h2>
+                    <div class="info-rest-orders-wrap">
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>1</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>2</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>3</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>1</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>2</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info-rest-orders-item">
+                            <h4>Заказ №<span>3</span></h4>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
+                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Телефон заказчика <span>89081234567</span></div>
+                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
+                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Товар <span>
+                                    <ul>
+                                        <li>Бургер Наггетс <span>1 шт</span></li>
+                                        <li>Роллы <span>4 шт</span></li>
+                                        <li>Сочок <span>2 шт</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-
-
-
+                <div class="info-rest-exit" id="infoRestExit">
+                    <div id="overlayExit">
+                        <div class="popup">
+                            <button class="close-cat" title="Закрыть окно" onclick="deleteExite2()"><i
+                                    class="fas fa-times fa-2x"></i></button>
+                            <p class="zag">Вы уверены, что хотите выйти?</p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-cancel">Отмена</button>
+                                <button id="btnDelete" class="btn btn-delete" type="button"><a href="/">
+                                        Выйти</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

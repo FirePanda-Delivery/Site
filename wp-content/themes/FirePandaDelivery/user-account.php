@@ -8,10 +8,10 @@
                     <div class="user-acc-sidebar">
                         <div class="user-acc-sidebar-top">
                             <ul>
-                                <li>Профиль</li>
-                                <li>Мои заказы</li>
-                                <li>Мои скидки</li>
-                                <li>Выход</li>
+                                <li id="userAccProfile">Профиль</li>
+                                <li id="userAccOrders">Мои заказы</li>
+                                <li id="userAccSale">Мои скидки</li>
+                                <li id="userAccExit" onclick="swa()">Выход</li>
                             </ul>
                         </div>
                         <div class="user-acc-sidebar-bottom">
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="user-acc-profile">
+                    <div class="user-acc-profile" id="UserProfileBlock">
                         <h4>ПРОФИЛЬ</h4>
                         <div class="user-acc-profile-wrapper">
                             <form id="user-acc-form" action="" method="post">
@@ -58,7 +58,7 @@
                         </div>
 
                     </div>
-                    <div class="user-acc-my-orders">
+                    <div class="user-acc-my-orders" id="userOrdersBlock">
                         <h4>МОИ ЗАКАЗЫ</h4>
                         <div class="user-acc-my-orders-wrapper">
                             <div class="order-block">
@@ -137,6 +137,24 @@
 
                         </div>
 
+                    </div>
+                    <div class="user-acc-my-sales" id="userAccSaleBlock">
+                        <h4>МОИ СКИДКИ</h4>
+                        <div class="user-acc-my-sales-wrapper">
+                            <div class="sales-block"></div>
+                        </div>
+                    </div>
+                    <div class="user-acc-my-exit" id="userAccExitBlock"></div>
+                </div>
+                <div id="overlayUserAccExit">
+                    <div class="popup">
+                        <button class="close-cat" title="Закрыть окно" onclick="swa2()"><i
+                                class="fas fa-times fa-2x"></i></button>
+                        <p class="zag">Вы уверены, что хотите хотите выйти из аккаунта?</p>
+                        <div class="modal-footer">
+                            <button id="btnUserBack" type="button" class="btn btn-cancel">Отмена</button>
+                            <button id="btnUserExit" class="btn btn-delete" type="button">Выйти</button>
+                        </div>
                     </div>
                 </div>
             </div>
