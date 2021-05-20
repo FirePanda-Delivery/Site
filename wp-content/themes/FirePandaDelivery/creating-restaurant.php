@@ -73,13 +73,13 @@
                                 </li>
                             </ul>
                             <input placeholder="Название ресторана" type="text" required autofocus>
-                            <textarea placeholder="Описание" required></textarea>
                             <input placeholder="От скольки доставка, руб" type="number" required>
                             <fieldset class="time-work">
                                 <input placeholder="Время работы" type="time" required>
                                 <div>до</div>
                                 <input placeholder="Время работы" type="time" required>
                             </fieldset>
+                            <textarea placeholder="Описание" required></textarea>
                             <fieldset class="info-rest-btns">
                                 <button name="info-rest-save" type="submit" class="btn"
                                     id="info-rest-save">сохранить</button>
@@ -89,7 +89,7 @@
 
                         </form>
                         <div class="info-rest-ava">
-                            <img src="img/logo.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="">
                         </div>
                     </div>
 

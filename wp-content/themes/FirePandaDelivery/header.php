@@ -50,14 +50,16 @@
                 <div class="header-bottom-wrapp">
                     <div class="header-bottom-block">
                         <div class="logo">
-                            <a href="/Site"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg"
+                            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logotype.svg"
                                     alt="logo"></a>
                         </div>
                     </div>
                     <div class="header-bottom-user">
                         <div class="header-cart">
-                            <i class="fas fa-shopping-cart fa-2x"></i>
-                            <div class="header-cart-count">1</div>
+                            <a href="/cart">
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                                <div class="header-cart-count">1</div>
+                            </a>
                         </div>
                         <div class="btn-login" id="btnLogin" onclick="loginWindow()">Войти</div>
                     </div>

@@ -132,6 +132,8 @@ body {
     margin: 0 0 15px;
     padding: 10px;
     font-family: inherit;
+    width: 1000px;
+    height: 200px;
 }
 
 .time-work {
@@ -265,6 +267,7 @@ body {
 .info-rest-btns {
     display: flex;
     justify-content: space-between;
+    width: 300px;
 }
 
 .info-rest-block h2 {
@@ -282,6 +285,7 @@ body {
 
 .info-rest-wrap-form {
     font-size: 20px;
+    display: flex;
 }
 
 #overlay-cat fieldset {
@@ -683,23 +687,24 @@ textarea {
     margin: 0 50px;
     display: none;
 }
-#overlayProd  fieldset {
+
+#overlayProd fieldset {
     margin: 0;
 }
 
-#overlayProd  .modal-footer {
+#overlayProd .modal-footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#overlayProd  .btn-cancel {
+#overlayProd .btn-cancel {
     border: none;
     margin-right: 10px;
     padding: 5px 7px;
 }
 
-#overlayProd  .btn-delete {
+#overlayProd .btn-delete {
     background-color: var(--light-black) !important;
     border: none;
     padding: 5px 7px;
@@ -709,7 +714,7 @@ textarea {
     background-color: var(--pale-black) !important;
 }
 
-#overlayProd  {
+#overlayProd {
     position: fixed;
     top: 0;
     left: 0;
@@ -722,7 +727,8 @@ textarea {
     opacity: 0;
     transition: opacity 0.1s ease-in 0s;
 }
-#overlayProd  .popup {
+
+#overlayProd .popup {
     height: 160px;
     top: 10%;
     left: 0;
@@ -740,7 +746,7 @@ textarea {
     margin-top: 150px;
 }
 
-#overlayProd  .close-cat {
+#overlayProd .close-cat {
     top: 10px;
     right: 10px;
     width: 32px;
@@ -750,7 +756,7 @@ textarea {
     border: none;
 }
 
-#overlayProd  .popup p.zag {
+#overlayProd .popup p.zag {
     margin: 40px 0 10px;
     padding: 0 0 6px;
     font-size: 16px;
@@ -758,12 +764,12 @@ textarea {
     border-bottom: 1px solid var(--gray);
 }
 
-#overlayProd  .popup .close-cat {
+#overlayProd .popup .close-cat {
     position: absolute;
     font-weight: bold;
 }
 
-#overlayProd  .popup .close-cat:hover {
+#overlayProd .popup .close-cat:hover {
     color: var(--red);
 }
 
@@ -777,19 +783,19 @@ textarea {
     margin: 0;
 }
 
-#overlayExit  .modal-footer {
+#overlayExit .modal-footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#overlayExit  .btn-cancel {
+#overlayExit .btn-cancel {
     border: none;
     margin-right: 10px;
     padding: 5px 7px;
 }
 
-#overlayExit  .btn-delete {
+#overlayExit .btn-delete {
     background-color: var(--light-black) !important;
     border: none;
     padding: 5px 7px;
@@ -799,7 +805,7 @@ textarea {
     background-color: var(--pale-black) !important;
 }
 
-#overlayExit  {
+#overlayExit {
     position: fixed;
     top: 0;
     left: 0;
@@ -812,7 +818,8 @@ textarea {
     opacity: 0;
     transition: opacity 0.1s ease-in 0s;
 }
-#overlayExit  .popup {
+
+#overlayExit .popup {
     height: 160px;
     top: 10%;
     left: 0;
@@ -830,7 +837,7 @@ textarea {
     margin-top: 150px;
 }
 
-#overlayExit  .close-cat {
+#overlayExit .close-cat {
     top: 10px;
     right: 10px;
     width: 32px;
@@ -840,7 +847,7 @@ textarea {
     border: none;
 }
 
-#overlayExit  .popup p.zag {
+#overlayExit .popup p.zag {
     margin: 40px 0 10px;
     padding: 0 0 6px;
     font-size: 16px;
@@ -848,11 +855,23 @@ textarea {
     border-bottom: 1px solid var(--gray);
 }
 
-#overlayExit  .popup .close-cat {
+#overlayExit .popup .close-cat {
     position: absolute;
     font-weight: bold;
 }
 
-#overlayExit  .popup .close-cat:hover {
+#overlayExit .popup .close-cat:hover {
     color: var(--red);
+}
+
+.info-rest-ava {
+    width: 450px;
+    background: var(--light-black);
+    height: 229px;
+    margin-left: 50px;
+}
+
+.info-rest-ava img {
+    width: 100%;
+    height: 100%;
 }
