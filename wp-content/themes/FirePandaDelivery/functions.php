@@ -17,6 +17,10 @@ function styles() {
 	wp_enqueue_style( 'creating-restaurant-css', get_template_directory_uri().'/css/creating-restaurant.css');
 	wp_enqueue_style( 'user-account-css', get_template_directory_uri().'/css/user-account.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
+	
+	if (is_page("error")) {
+        wp_enqueue_style('error-css', get_template_directory_uri() . '/css/error.css');
+    }
 }
 // регистрируем стили
 add_action('wp_enqueue_scripts', 'styles');
@@ -30,8 +34,9 @@ function scripts() {
 	wp_enqueue_script('map-js', get_template_directory_uri() . '/js/map.js');
 	wp_enqueue_script('maskedinput-js', get_template_directory_uri() . '/js/jquery.maskedinput.min.js');
 	wp_enqueue_script('create-rest-js', get_template_directory_uri() . '/js/creating-rest.js');
+	wp_enqueue_script('user-acc-js', get_template_directory_uri() . '/js/user-acc.js');
 
-
+	
 	if (is_front_page()) {
         wp_enqueue_script('index-js', get_template_directory_uri() . '/js/index.js');
     }
@@ -43,6 +48,7 @@ function scripts() {
 	if (is_page("cart")) {
         wp_enqueue_script('cart-js', get_template_directory_uri() . '/js/cart.js');
     }
+
 
 
 }

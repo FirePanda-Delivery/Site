@@ -102,7 +102,7 @@ function seeMore() {
 
 
 function cartClick(data) {
-    location.href = "/restaurant?id=" + data.currentTarget.dataset.restaurantId;
+    location.href = "Site/restaurant?id=" + data.currentTarget.dataset.restaurantId;
 }
 
 let searchInput = document.getElementById("search-block-eat");
@@ -223,3 +223,49 @@ function search() {
 
 }
 
+
+
+// "Еще" на главной
+const btnMore = document.querySelector("#btnMore");
+const MoreBlock = document.querySelector('#MoreBlock');
+
+MoreBlock.style.display = 'none';
+
+btnMore.addEventListener('click', event => {
+   MoreBlock.style.display = 'block';
+});
+
+document.onclick = function(e){
+    if ( e.target.id !== 'MoreBlock' && e.target.id !== 'btnMore' ) {
+        MoreBlock.style.display = 'none';
+    };
+};
+
+// Модальное окно авторизации
+var b = document.getElementById('LoginModalWindow');
+function loginWindow(){
+	b.style.visibility = 'visible';
+	b.style.opacity = '1';
+	b.style.transition = 'all 0.3s ease-out 0s';
+}
+function loginWindow2(){
+	b.style.visibility = 'hidden';
+	b.style.opacity = '0';
+}
+
+
+let loginForm = document.querySelector("#loginForm");
+let loginForm2 = document.querySelector("#loginForm2");
+
+let loginLinkEnter = document.querySelector("#loginLinkEnter");
+let loginLinkRegistr = document.querySelector("#loginLinkRegistr");
+
+
+loginLinkEnter.addEventListener('click',() => {
+   loginForm.style.display = 'none';
+   loginForm2.style.display = 'block';
+});
+loginLinkRegistr.addEventListener('click', () => {
+    loginForm.style.display = 'block';
+    loginForm2.style.display = 'none';
+ });

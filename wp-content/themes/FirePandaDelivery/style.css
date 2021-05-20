@@ -78,12 +78,19 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 38px;
+    color: var(--light-black);
+
+}
+
 h4 {
     font-weight: bold;
     font-size: 22px;
     line-height: 38px;
     color: var(--light-black);
-
 }
 
 .container {
@@ -108,7 +115,7 @@ h4 {
 }
 
 .slider-section {
-    margin-top: 105px;
+    margin-top: 135px;
 }
 
 .header-bottom-wrapp {
@@ -124,6 +131,7 @@ h4 {
 .header-bottom {
     width: 100%;
     background-color: var(--white);
+    box-shadow: 0 6px 4px -4px rgb(0 0 0 / 33%);
 }
 
 .btn {
@@ -155,6 +163,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .btn-login:hover {
@@ -251,7 +260,9 @@ h4 {
     font-size: 16px;
     line-height: 34px;
     text-transform: uppercase;
+    position: relative;
 }
+
 
 .btn-more:hover {
     color: var(--red);
@@ -260,6 +271,7 @@ h4 {
 
 .more-category-block {
     position: relative;
+    cursor: pointer;
 }
 
 .more-category {
@@ -267,8 +279,7 @@ h4 {
     padding: 10px;
     position: absolute;
     z-index: 9999;
-    right: 0px;
-    display: none;
+    right: 0;
 }
 
 .more-category-item {
@@ -494,7 +505,6 @@ h4 {
     height: 100%;
 }
 
-
 #see-more {
     width: 100%;
     padding: 15px;
@@ -602,6 +612,22 @@ p#hide-blocks {
     background-color: var(--white);
     padding: 30px;
     margin-top: 30px;
+}
+
+.terms-promotions-block {
+    background-color: var(--white);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.terms-promotions-block ul li {
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.terms-promotions-block ul li:hover {
+    color: var(--red);
 }
 
 .header-avatar {
@@ -786,6 +812,286 @@ p#hide-blocks {
     background-color: #666565;
 }
 
+#LoginModalWindow fieldset {
+    margin: 0;
+}
+
+#LoginModalWindow .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#LoginModalWindow .btn-cancel {
+    border: none;
+    margin-right: 10px;
+    padding: 5px 7px;
+}
+
+#LoginModalWindow .btn-delete {
+    background-color: var(--light-black) !important;
+    border: none;
+    padding: 5px 7px;
+}
+
+#LoginModalWindow .btn-delete:hover {
+    background-color: var(--pale-black) !important;
+}
+
+#LoginModalWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in 0s;
+}
+
+#LoginModalWindow .popup {
+    top: 5%;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    margin: auto;
+    max-width: 580px;
+    position: absolute;
+    padding: 10px 20px !important;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 0 14px rgb(0 0 0 / 40%);
+    margin-top: 40px;
+    height: auto;
+}
+
+#LoginModalWindow .close-cat {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+#LoginModalWindow .popup p.zag {
+    margin: 40px 0 10px;
+    padding: 0 0 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--gray);
+}
+
+#LoginModalWindow .popup .close-cat {
+    position: absolute;
+    font-weight: bold;
+}
+
+#LoginModalWindow .popup .close-cat:hover {
+    color: var(--red);
+}
+
+.login-block-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 35px 0px 10px 0px;
+}
+
+.modal-login-wrap h3 {
+    text-align: center;
+}
+
+.modal-login-wrap input {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#loginForm .input-checkbox {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#loginForm input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+    min-width: 0;
+}
+
+#loginForm input {
+    font-size: inherit;
+}
+
+#loginForm {
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#loginForm h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"],
+#loginForm input[type="tel"],
+#loginForm input[type="text"],
+#loginForm input[type="url"],
+#loginForm textarea {
+    width: 100%;
+    border: 1px solid #ccc !important;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+#loginForm input[type="email"]:hover,
+#loginForm input[type="password"]:hover,
+#loginForm input[type="tel"]:hover,
+#loginForm input[type="text"]:hover,
+#loginForm input[type="url"]:hover,
+#loginForm textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#loginForm button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--red);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#loginForm button[type="submit"]:hover {
+    background: var(--dark-red);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#loginForm button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#loginForm input:focus,
+#loginForm textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+#loginForm input {
+    margin-bottom: 10px !important;
+}
+
+#loginForm2 .input-checkbox {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#loginForm2 input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+    min-width: 0;
+}
+
+#loginForm2 input {
+    font-size: inherit;
+}
+
+#loginForm2 {
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: none;
+}
+
+#loginForm2 h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#loginForm2 input[type="email"],
+#loginForm2 input[type="password"],
+#loginForm2 input[type="tel"],
+#loginForm2 input[type="text"],
+#loginForm2 input[type="url"],
+#loginForm2 textarea {
+    width: 100%;
+    border: 1px solid #ccc !important;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+#loginForm2 input[type="email"]:hover,
+#loginForm2 input[type="password"]:hover,
+#loginForm2 input[type="tel"]:hover,
+#loginForm2 input[type="text"]:hover,
+#loginForm2 input[type="url"]:hover,
+#loginForm2 textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#loginForm2 button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--red);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#loginForm2 button[type="submit"]:hover {
+    background: var(--dark-red);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#loginForm2 button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#loginForm2 input:focus,
+#loginForm2 textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+#loginLinkEnter {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#loginLinkRegistr {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#loginForm2 input {
+    margin-bottom: 10px !important;
+}
 
 
 /*медиазапросы*/

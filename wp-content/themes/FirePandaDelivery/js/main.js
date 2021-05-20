@@ -4,8 +4,7 @@ let url = "https://fire-panda-delivery.herokuapp.com";
 
 let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg";
 
-const defaultCity = "воронеж";
-
+const defaultCity = "Воронеж";
 
 
 
@@ -181,54 +180,13 @@ $(document).ready(function () {
         });
 });
 
-// Счетчик товара
-
-// var plus = document.querySelectorAll('.plus');
-// var minus = document.querySelectorAll('.minus');
-// var number = document.querySelectorAll('.number');
-// var i = 0;
-
-// plus[i].onclick = up;
-// function up() {
-//     var count = Number(number[i].innerHTML);
-//     if(count < 100){
-//         number[i].innerHTML = count += 1;
-//     }
-
-// }
-// minus[i].onclick = down;
-// function down() {
-//     var count = Number(number[i].innerHTML);
-//     if(count > 1) {
-//         number[i].innerHTML = count -= 1;
-//     }
-    
-// }
-
-
-// Переключатель темы
-
-// $(function () {
-//   $('.toggle').on('click' ,function(event) {
-//     $(this).toggleClass('active');
-//     $('body').toggleClass('night');				
-//   });
-// });
-
-
-
-
-// document.getElementById('rest-category-btn').addEventListener("click", hiddenCloseclick);
-// 	function hiddenCloseclick() {
-// 	let x = document.getElementById('hidden-rest-category');
-//       if (x.style.display == "none"){
-// 	  x.style.display = "block";
-// 	  } else {
-// 	 x.style.display = "none"}
-//     };
 
 window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
     const preloader = document.querySelector('.preloader') /* находим блок Preloader */
     preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
   })
+
+  
+
+
 
