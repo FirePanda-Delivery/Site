@@ -1,0 +1,11 @@
+.order-registration-wrapper {
+    background-color: var(--white);
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+.order-reg-left {}
+
+.order-reg-right {
+    
+}
