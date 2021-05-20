@@ -8,7 +8,6 @@ const defaultCity = "Воронеж";
 
 
 
-
 // $(document).click(function(event) {     if
 // (!$(event.target).closest(".modal,.js-open-modal").length) {
 // $("body").find(".popup").removeClass("visible");     } });

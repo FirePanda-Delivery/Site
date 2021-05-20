@@ -11,7 +11,9 @@ Template Name: Условия акций
                 <h2>Условия проведения акций</h2>
                 <div class="terms-promotions-block">
                     <ul>
-                        <li><a href="#"><a href="#"> Выгодная пара Макдоналдс с Чикен Премьер Кантри</a></a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/img/document.pdf" target="_blank">
+                                Выгодная пара Макдоналдс с Чикен Премьер
+                                Кантри</a></li>
                         <li><a href="#"> Начисление и списание бонусов СберСпасибо за заказы в FirePanda Delivery</a>
                         </li>
                         <li><a href="#"> Правила использования подарочного сертификата FirePanda Delivery</a></li>

@@ -91,6 +91,11 @@
                                         <div class="order-product-price">500 руб</div>
                                     </div>
                                 </div>
+                                <div class="order-btn-block">
+                                    <button name="order-btn" type="submit" class="btn" id="orderBtn">Повторить
+                                        заказ
+                                    </button>
+                                </div>
                             </div>
                             <div class="order-block">
                                 <div class="order-top">

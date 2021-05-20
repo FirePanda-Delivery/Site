@@ -270,3 +270,22 @@
 #overlayUserAccExit .popup .close-cat:hover {
     color: var(--red);
 }
+.order-btn-block {
+    display: flex;
+    justify-content: flex-end;
+}
+#orderBtn {
+    background: var(--red);
+    width: 130px;
+    height: 34px;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 20px;
+}

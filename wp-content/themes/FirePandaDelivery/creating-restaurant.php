@@ -88,6 +88,9 @@
                             </fieldset>
 
                         </form>
+                        <div class="info-rest-ava">
+                            <img src="img/logo.svg" alt="">
+                        </div>
                     </div>
 
                 </div>

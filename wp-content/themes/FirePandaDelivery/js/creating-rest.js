@@ -273,3 +273,4 @@ btnOrd.addEventListener('click', event => {
     infoCat.style.display = 'none';
     infoProd.style.display = 'none';
 });
+
