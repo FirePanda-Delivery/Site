@@ -269,5 +269,3 @@ loginLinkRegistr.addEventListener('click', () => {
     loginForm.style.display = 'block';
     loginForm2.style.display = 'none';
  });
-
-

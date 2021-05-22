@@ -46,25 +46,32 @@ Template Name: Оформление заказа
                                 <div class="order-block">
                                     <div class="order-top">
                                         <div class="order-resraurant">
-                                            <div class="order-resraurant-name">Макдоналдс</div>
+                                            <div class="order-resraurant-name">Мак</div>
                                         </div>
                                     </div>
                                     <div class="order-bottom">
                                         <div class="order-bottom-block">
-                                            <div class="order-product">Двойной Биг Тейсти</div>
-                                            <div class="order-product-count">2 шт</div>
-                                            <div class="order-product-price">650 руб</div>
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
                                         </div>
                                         <div class="order-bottom-block">
-                                            <div class="order-product">Венская вафля</div>
-                                            <div class="order-product-count">5 шт</div>
-                                            <div class="order-product-price">475 руб</div>
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
                                         </div>
-
+                                        <div class="order-bottom-block">
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
+                                        </div>
                                     </div>
                                     <div class="order-bottom-result">
                                         <div>ИТОГ</div>
-                                        <div><span>1125</span>руб</div>
+                                        <div><span>280</span>руб</div>
                                     </div>
                                 </div>
                             </div>
