@@ -9,7 +9,7 @@
 
                     </div>
                     <div class="btn-cart-buy">
-                        <button name="cart-submit" type="submit" id="cartBuy">заказать</button>
+                        <button name="cart-submit" type="submit" id="cartBuy">оформить заказ</button>
                     </div>
                 </div>
 

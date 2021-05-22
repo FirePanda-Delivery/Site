@@ -7,39 +7,80 @@ Template Name: Оформление заказа
 <main>
     <section class="contacts">
         <div class="container">
-            <div class="contacts-block">
-                <h2>Оформление заказа</h2>\
+            <div class="order-reg-block">
+                <h2>Оформление заказа</h2>
                 <div class="order-registration-wrapper">
                     <div class="order-reg-left">
                         <h4>Адрес доставки</h4>
 
                         <form id="deliveryAddress" action="" method="post">
                             <fieldset>
-                                <input placeholder="Улица" type="text" required>
+                                <input placeholder="Адрес" type="text" required>
+                            </fieldset>
+                            <fieldset class="order-reg-address">
+                                <input placeholder="Кв./офис" type="number" required>
+                                <input placeholder="Домофон" type="number" required>
+                                <input placeholder="Подъезд" type="number" required>
+                                <input placeholder="Этаж" type="text" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Кв./офис" type="text" required>
-                                <input placeholder="Домофон" type="text" required>
-                                <input placeholder="Подъезд" type="text" required>
-                                <input placeholder="Улица" type="text" required>
+                                <textarea placeholder="Комментарий к заказу" id=""></textarea>
                             </fieldset>
-
-                            <input placeholder="Введите фамилию" type="text" required>
-                            <input placeholder="Введите логин" type="text" required>
-                            <input placeholder="Введите пароль" type="password" required>
-                            <input placeholder="Повторите пароль" type="password" required>
-                            <input placeholder="Введите номер телефона" type="tel" required>
-                            <input placeholder="Введите email" type="email" required>
                         </form>
 
+                        <form action="" class="order-reg-pay">
+                            <p><input type="radio" id="radioOrderBtn">Онлайн оплата</p>
+                            <p><input type="radio" id="radioOrderBtn2">Google Pay</p>
+                        </form>
+
+                        <div class="order-bottom-btn">
+                            <button name="order-bottom-btn" type="submit" id="orderBottomBtn">заказать</button>
+                        </div>
+
                     </div>
-                    <div class="order-reg-right"></div>
+                    <div class="order-reg-right">
+                        <h4>Мой заказ</h4>
+                        <div class="order-reg-products ">
+
+                            <div class="user-acc-my-orders-wrapper">
+                                <div class="order-block">
+                                    <div class="order-top">
+                                        <div class="order-resraurant">
+                                            <div class="order-resraurant-name">Мак</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-bottom">
+                                        <div class="order-bottom-block">
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
+                                        </div>
+                                        <div class="order-bottom-block">
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
+                                        </div>
+                                        <div class="order-bottom-block">
+                                            <div class="order-product">Салат с копченным лососем, рукколой и
+                                                томатами</div>
+                                            <div class="order-product-count">2шт</div>
+                                            <div class="order-product-price">500 руб</div>
+                                        </div>
+                                    </div>
+                                    <div class="order-bottom-result">
+                                        <div>ИТОГ</div>
+                                        <div><span>280</span>руб</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 </main>
 <?php get_footer();?>
-
-
-<button name="submit" type="submit" id="loginSubmit">зарегистрироваться</button>

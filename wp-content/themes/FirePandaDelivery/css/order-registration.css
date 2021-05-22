@@ -2,10 +2,162 @@
     background-color: var(--white);
     padding: 30px;
     margin-top: 30px;
+    padding: 30px 30px;
     display: flex;
 }
-.order-reg-left {}
+
+.order-reg-left {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.order-reg-left h4 {
+    margin-bottom: 20px;
+}
 
 .order-reg-right {
-    
+    width: 100%;
+}
+
+#deliveryAddress input {
+    font-size: inherit;
+}
+
+#deliveryAddress {
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#deliveryAddress h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#deliveryAddress input[type="email"],
+#deliveryAddress input[type="tel"],
+#deliveryAddress input[type="text"],
+#deliveryAddress input[type="number"],
+#deliveryAddress input[type="url"],
+#deliveryAddress textarea {
+    width: 100%;
+    border: 1px solid #ccc !important;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+#deliveryAddress input[type="email"]:hover,
+#deliveryAddress input[type="tel"]:hover,
+#deliveryAddress input[type="text"]:hover,
+#deliveryAddress input[type="number"]:hover,
+#deliveryAddress input[type="url"]:hover,
+#deliveryAddress textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#deliveryAddress button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--red);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#deliveryAddress button[type="submit"]:hover {
+    background: var(--dark-red);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#deliveryAddress button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#deliveryAddressdeliveryAddress input:focus,
+#deliveryAddress textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+.order-reg-address {
+    display: flex;
+}
+
+.order-reg-address>input {
+    margin: 7px 5px !important;
+    width: auto;
+}
+
+.order-reg-address>input:first-child {
+    margin-left: 0 !important;
+}
+
+.order-reg-address>input:last-child {
+    margin-right: 0 !important;
+}
+
+.order-reg-products {
+    border: 1px solid var(--light-black);
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+#orderBottomBtn {
+    background: var(--red);
+    width: 100%;
+    height: 34px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.order-bottom-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-reg-pay {
+    margin: 40px 30px;
+    display: flex;
+}
+
+.order-reg-pay p {
+    margin-right: 20px;
+}
+
+.order-reg-pay p input {
+    margin-right: 5px;
+}
+
+.order-bottom-result {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.order-bottom-result div span {
+    margin-right: 5px;
+}
+
+.order-reg-block {
+    margin-top: 25px;
 }
