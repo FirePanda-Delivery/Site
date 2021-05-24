@@ -269,3 +269,14 @@ loginLinkRegistr.addEventListener('click', () => {
     loginForm.style.display = 'block';
     loginForm2.style.display = 'none';
  });
+
+
+
+loginLinkEnter.addEventListener('click',() => {
+   loginForm.style.display = 'none';
+   loginForm2.style.display = 'block';
+});
+loginLinkRegistr.addEventListener('click', () => {
+    loginForm.style.display = 'block';
+    loginForm2.style.display = 'none';
+ });
