@@ -1,6 +1,9 @@
 <?php 
 remove_action( 'wp_head',   'wp_print_head_scripts',    9 );
 
+$ApiUrl = "https://fire-panda-delivery.herokuapp.com";
+global $ApiUrl;
+
 
 
 // регистрируем стили и добавляем их в очередь

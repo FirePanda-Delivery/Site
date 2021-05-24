@@ -1,6 +1,6 @@
 
-let url = "https://fire-panda-delivery.herokuapp.com";
-//let url = "http://localhost:8070";
+//let url = "https://fire-panda-delivery.herokuapp.com";
+let url = "http://localhost:8070";
 
 let starUrl = "http://firepanda/wp-content/themes/FirePandaDelivery/img/star.svg";
 
@@ -185,7 +185,11 @@ $(document).ready(function () {
 window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
     const preloader = document.querySelector('.preloader') /* находим блок Preloader */
     preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
-  })
+  });
+
+window.addEventListener("storage", evetn => {
+    alert();
+});
 
   
 // Модальное окно авторизации
