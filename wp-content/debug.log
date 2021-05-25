@@ -169,3 +169,31 @@ Stack trace:
 [22-May-2021 16:29:45 UTC] PHP Notice:  Undefined index: value in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
 [22-May-2021 16:30:03 UTC] PHP Notice:  Undefined index: id in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
 [22-May-2021 16:30:03 UTC] PHP Notice:  Undefined index: value in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
+[23-May-2021 20:55:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php:4
+Stack trace:
+#0 C:\OpenServer\domains\firepanda\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\firepanda\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\firepanda\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
+[24-May-2021 06:47:17 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php:4
+Stack trace:
+#0 C:\OpenServer\domains\firepanda\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\firepanda\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\firepanda\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
+[25-May-2021 06:16:30 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php:4
+Stack trace:
+#0 C:\OpenServer\domains\firepanda\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\firepanda\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\firepanda\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4
+[25-May-2021 08:36:24 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php:4
+Stack trace:
+#0 C:\OpenServer\domains\firepanda\wp-includes\template-loader.php(106): include()
+#1 C:\OpenServer\domains\firepanda\wp-blog-header.php(19): require_once('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\firepanda\index.php(17): require('C:\\OpenServer\\d...')
+#3 {main}
+  thrown in C:\OpenServer\domains\firepanda\wp-content\themes\FirePandaDelivery\restaurant.php on line 4

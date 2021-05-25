@@ -113,12 +113,13 @@ $('.slider').slick({
     infinite: true,
     fadeSpeed: 1000
 });
-//маска ввода на стр Курьер
+
+//Маска ввода для телефона
 $(document).ready(function () {
     $("#phone").mask("+7 (999) 99-99-999");
 });
 
-//Валидация email на стр Курьер
+//Валидация email 
 function validate(form_id, email) {
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     var address = document.forms[form_id].elements[email].value;
@@ -200,8 +201,6 @@ function loginWindow2(){
 }
 
 
-
-
 let loginForm = document.querySelector("#loginForm");
 let loginForm2 = document.querySelector("#loginForm2");
 
@@ -217,4 +216,7 @@ loginLinkRegistr.addEventListener('click', () => {
     loginForm.style.display = 'block';
     loginForm2.style.display = 'none';
  });
+
+
+
 

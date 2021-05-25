@@ -21,15 +21,12 @@
                     <div class="more-category-block">
                         <div class="btn-more" id="btnMore">Еще</div>
                         <div class="more-category" id="MoreBlock">
-                            <div class="more-category-item">Эмендэмсики</div>
-                            <div class="more-category-item">Кофеин</div>
-                            <div class="more-category-item">Протеин</div>
-                            <div class="more-category-item">Котеин</div>
-                            <div class="more-category-item">Чипсеки</div>
-                            <div class="more-category-item">Самсаскурицейигрибами</div>
+                            <div class="more-category-item">Гарниры</div>
+                            <div class="more-category-item">Соусы</div>
+                            <div class="more-category-item">Десерты и выпечка</div>
+                            <div class="more-category-item">Закуска</div>
                         </div>
                     </div>
-
                 </div>
                 <div class="search-food-block">
                     <input type="text" class="search-block search-block-eat" id="search-block-eat"
@@ -37,11 +34,9 @@
                     <div class="search-food-btn">Найти</div>
                     <div class="search-food-results" id="searchResult" style="display: none"></div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <section class="list-restaurants">
         <div class="container">
             <div class="list-restaurants-block">
@@ -53,6 +48,5 @@
             </div>
         </div>
     </section>
-
 </main>
 <?php get_footer();?>
