@@ -275,6 +275,8 @@
     font-size: inherit;
 }
 
+
+
 .input-checkbox {
     font-size: 15px;
     margin: 15px 0;
@@ -319,7 +321,7 @@
 #contact input[type="url"],
 #contact textarea {
     width: 100%;
-    border: 1px solid #ccc!important;
+    border: 1px solid #ccc !important;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;

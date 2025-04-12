@@ -99,27 +99,31 @@
                     <div class=" info-rest-cat-create">
                         <div class="info-rest-category-wrap">
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Бургеры</div>
                                 <i class="fas fa-trash" onclick="swa()" type="button"></i>
                             </div>
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Роллы</div>
                                 <i class="fas fa-trash " onclick="swa()" type="button"></i>
                             </div>
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Пицца</div>
                                 <i class="fas fa-trash" onclick="swa()" type="button"></i>
                             </div>
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Напитки</div>
                                 <i class="fas fa-trash " onclick="swa()" type="button"></i>
                             </div>
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Салаты</div>
                                 <i class="fas fa-trash" onclick="swa()" type="button"></i>
                             </div>
                             <div class="category-create-item">
-                                <div class="category-name">Категория</div>
+                                <div class="category-name">Десерты</div>
+                                <i class="fas fa-trash " onclick="swa()" type="button"></i>
+                            </div>
+                            <div class="category-create-item">
+                                <div class="category-name">Кофе</div>
                                 <i class="fas fa-trash " onclick="swa()" type="button"></i>
                             </div>
                         </div>
@@ -357,105 +361,102 @@
                     <div class="info-rest-orders-wrap">
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>1</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Ленина, 37Д</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. 9 Января, 204</span></div>
+                            <div>ФИО заказчика <span>Мельников Иван Александрович</span></div>
                             <div>Телефон заказчика <span>89081234567</span></div>
                             <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
                             <div>Телефон заказчика <span>89101234985</span></div>
                             <div>Товар <span>
                                     <ul>
                                         <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Твистер оригинальный <span>24 шт</span></li>
                                     </ul>
                                 </span>
                             </div>
                         </div>
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>2</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
-                            <div>Телефон заказчика <span>89081234567</span></div>
-                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
-                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Айдаровская улица, 329</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Абрикосовая, 1Б</span></div>
+                            <div>ФИО заказчика <span>Князева Эмма Владиславовна</span></div>
+                            <div>Телефон заказчика <span>89435980321</span></div>
+                            <div>ФИО курьера <span> Майоров Павел Демидович</span></div>
+                            <div>Телефон заказчика <span>89100987867</span></div>
                             <div>Товар <span>
                                     <ul>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Баскет фри <span> 4 шт</span></li>
+                                        <li>Пепси Макс 0,5 <span> 2 шт</span></li>
+                                        <li>Пирожок с вишней <span> 1 шт</span></li>
                                     </ul>
                                 </span>
                             </div>
                         </div>
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>3</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
-                            <div>Телефон заказчика <span>89081234567</span></div>
-                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
-                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Автодорожная, 55</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Абрикосовая, 1Б</span></div>
+                            <div>ФИО заказчика <span>Королев Илья Даниилович</span></div>
+                            <div>Телефон заказчика <span>8997321001</span></div>
+                            <div>ФИО курьера <span> Иванов Глеб Давидович</span></div>
+                            <div>Телефон заказчика <span>89107776435</span></div>
                             <div>Товар <span>
                                     <ul>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Комбо с 2 Сандерс Баскетами <span> 1 шт</span></li>
                                     </ul>
                                 </span>
                             </div>
                         </div>
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>1</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
-                            <div>Телефон заказчика <span>89081234567</span></div>
-                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
-                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Беляева</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. 9 Января, 204A</span></div>
+                            <div>ФИО заказчика <span>Прусикин Иван Петрович</span></div>
+                            <div>Телефон заказчика <span>89704653827</span></div>
+                            <div>ФИО курьера <span> Никифорова Ярослава Егоровна</span></div>
+                            <div>Телефон заказчика <span>88904756332</span></div>
                             <div>Товар <span>
                                     <ul>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Микс Бокс <span> 2 шт</span></li>
+                                        <li>2 Картофеля фри стандартных <span> 2 шт</span></li>
+                                        <li>Соус Барбекю <span> 2 шт</span></li>
+                                        <li> Кофе Капучино 0,4 <span> 2 шт</span></li>
+                                        <li> Чизбургер Де Люкс <span> 2 шт</span></li>
+
                                     </ul>
                                 </span>
                             </div>
                         </div>
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>2</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
-                            <div>Телефон заказчика <span>89081234567</span></div>
-                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
-                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Дарвина, 3В</span></div>
+                            <div>Адрес ресторана <span>г. ул. Абрикосовая, 1Б</span></div>
+                            <div>ФИО заказчика <span>Цветкова Алия Мироновна</span></div>
+                            <div>Телефон заказчика <span>89995762317</span></div>
+                            <div>ФИО курьера <span> Шарова Ксения Александровна</span></div>
+                            <div>Телефон заказчика <span>8007653399</span></div>
                             <div>Товар <span>
                                     <ul>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Сок J7 яблочный <span> 1 шт</span></li>
+                                        <li>Картофель фри стандартный <span> 1 шт</span></li>
+                                        <li>Донат Карамельный вкус <span> 1 шт</span></li>
                                     </ul>
                                 </span>
                             </div>
                         </div>
                         <div class="info-rest-orders-item">
                             <h4>Заказ №<span>3</span></h4>
-                            <div>Доставка в <span>г. Воронеж, ул. Ленина</span></div>
-                            <div>Адрес ресторана <span>г. Воронеж, ул. Января</span></div>
-                            <div>ФИО заказчика <span>Иванов Иван Иванович</span></div>
-                            <div>Телефон заказчика <span>89081234567</span></div>
-                            <div>ФИО курьера <span> Тульпанская Лика Витальевна</span></div>
-                            <div>Телефон заказчика <span>89101234985</span></div>
+                            <div>Доставка в <span>г. Воронеж, ул. Димитрова, 8</span></div>
+                            <div>Адрес ресторана <span>г. Воронеж, ул. Абрикосовая, 1Б</span></div>
+                            <div>ФИО заказчика <span>Никулина Ника Артёмовна</span></div>
+                            <div>Телефон заказчика <span>89764490810</span></div>
+                            <div>ФИО курьера <span> Фомин Максим Владимирович</span></div>
+                            <div>Телефон заказчика <span>89087654651</span></div>
                             <div>Товар <span>
                                     <ul>
-                                        <li>Бургер Наггетс <span>1 шт</span></li>
-                                        <li>Роллы <span>4 шт</span></li>
-                                        <li>Сочок <span>2 шт</span></li>
+                                        <li>Кофе Латте 0,4 <span> 5 шт</span></li>
+                                        <li>Твистер Джуниор Спешл <span>6 шт</span></li>
+                                        <li>Шефбургер <span>2 шт</span></li>
                                     </ul>
                                 </span>
                             </div>

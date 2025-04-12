@@ -78,185 +78,205 @@
     </section>
     <section class="restaurant-product-cards">
         <div class="container" id="product-cards">
-            <!--            <div class="restaurant-product-cards-block">-->
-            <!--                <h2>бургеры</h2>-->
-            <!--                <div class="restaurant-product-cards">-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus" onclick="alert('я сработал');">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                    <div class="restaurant-product-card">-->
-            <!--                        <div class="restaurant-product-img"><img-->
-            <!--                                src="--><?php //echo get_template_directory_uri(); ?>
-            <!--/img/restaurant-product.jpg" alt="">-->
-            <!--                        </div>-->
-            <!--                        <h4>Бургер Биг</h4>-->
-            <!--                        <div class="restaurant-product-descr">-->
-            <!--                            Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с-->
-            <!--                            добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных соусом-->
-            <!--                            "Барбекю" и майонезом.-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-take">-->
-            <!--                            <div class="add-product">-->
-            <!---->
-            <!--                                <div class="minus">–</div>-->
-            <!--                                <div class="add-product-count number">1</div>-->
-            <!--                                <div class="plus">+</div>-->
-            <!---->
-            <!--                            </div>-->
-            <!--                            <div class="restaurant-product-price">-->
-            <!--                                <div class="product-weight">100 <span>г</span></div>-->
-            <!--                                <div class="product-cost">68 <span>₽</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <div class="restaurant-product-btn">-->
-            <!--                            в корзину-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <div class="restaurant-product-cards-block">
+                <h2>бургеры</h2>
+                <div class="restaurant-product-cards">
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurant-product-card">
+                        <div class="restaurant-product-top">
+                            <div class="restaurant-product-img"><img src="<?php echo get_template_directory_uri(); ?>
+            /img/restaurant-product.jpg" alt=""> </div>
+                            <h4>Бургер Биг</h4>
+                            <div class="restaurant-product-descr">
+                                Бургер с бифштексом из 100% говядины на булочке, посыпанной кукурузной крошкой, с
+                                добавлением ломтиков бекона, свежего салата, помидоров, хрустящего лука, заправленных
+                                соусом
+                                "Барбекю" и майонезом.
+                            </div>
+                        </div>
+                        <div class="restaurant-product-bottom">
+                            <div class="restaurant-product-take">
+                                <div class="add-product">
+                                    <div class="minus" onclick="alert('я сработал');">–</div>
+                                    <div class="add-product-count number">1</div>
+                                    <div class="plus">+</div>
+                                </div>
+
+                                <div class="restaurant-product-price">
+                                    <div class="product-weight">100 <span>г</span></div>
+                                    <div class="product-cost">68 <span>₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="restaurant-product-btn">
+                                в корзину
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <?php

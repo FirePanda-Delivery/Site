@@ -15,6 +15,7 @@ function styles() {
 	wp_enqueue_style( 'restaurant-css', get_template_directory_uri().'/css/restaurant.css');
 	wp_enqueue_style( 'cart-css', get_template_directory_uri().'/css/cart.css');
 	wp_enqueue_style( 'creating-restaurant-css', get_template_directory_uri().'/css/creating-restaurant.css');
+	wp_enqueue_style( 'order-registration-css', get_template_directory_uri().'/css/order-registration.css');
 	wp_enqueue_style( 'user-account-css', get_template_directory_uri().'/css/user-account.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
 	
@@ -47,6 +48,9 @@ function scripts() {
 
 	if (is_page("cart")) {
         wp_enqueue_script('cart-js', get_template_directory_uri() . '/js/cart.js');
+    }
+	if (is_page("order-registration")) {
+        wp_enqueue_script('order-registration-js', get_template_directory_uri() . '/js/order-registration.js');
     }
 
 

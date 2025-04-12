@@ -159,6 +159,7 @@
 .restaurant-product-card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 60px;
     padding: 20px;
     color: var(--white);
