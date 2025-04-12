@@ -83,6 +83,9 @@ function createProductCarts(products, div) {
         productBlock.classList.add("restaurant-product-card");
         productBlock.dataset.productId = product.id;
 
+        let top = document.createElement("div");
+        top.classList.add("restaurant-product-top");
+
         let productImageBlock = document.createElement("div");
         productImageBlock.classList.add("restaurant-product-img");
 
@@ -90,14 +93,15 @@ function createProductCarts(products, div) {
         productImage.src = url + product.img;
 
         productImageBlock.appendChild(productImage);
-        productBlock.appendChild(productImageBlock);
+        top.appendChild(productImageBlock);
 
         let title = document.createElement("h4");
         title.innerText = product.name;
 
-        productBlock.appendChild(title);
+        top.appendChild(title);
 
         let description = document.createElement("div");
+        description.classList.add("restaurant-product-descr");
 
         if (product.description) {
             description.innerText = product.description;
@@ -105,7 +109,12 @@ function createProductCarts(products, div) {
             description.innerText = "\n";
         }
 
-        productBlock.appendChild(description);
+        top.appendChild(description);
+
+        productBlock.appendChild(top);
+
+        let bottom = document.createElement("div");
+        bottom.classList.add("restaurant-product-bottom");
 
         let take = document.createElement("div");
         take.classList.add("restaurant-product-take");
@@ -145,15 +154,16 @@ function createProductCarts(products, div) {
             "            </div>";
 
 
-        productBlock.appendChild(take);
+        bottom.appendChild(take);
 
         let btn = document.createElement("div");
         btn.classList.add("restaurant-product-btn");
         btn.innerText = " в корзину ";
         btn.addEventListener("click", AddShoppingCart);
 
-        productBlock.appendChild(btn);
+        bottom.appendChild(btn);
 
+        productBlock.appendChild(bottom);
 
         div.appendChild(productBlock);
     })
@@ -175,7 +185,7 @@ function plus(element) {
 }
 
 function AddShoppingCart(event) {
-    let block = event.path[1];
+    let block = event.target.parentElement.parentElement;
 
     let obj = {
         productId: block.dataset.productId,

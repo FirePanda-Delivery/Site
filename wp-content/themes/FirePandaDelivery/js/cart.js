@@ -2,15 +2,16 @@
 //const address = localStorage.getItem("address");
 //const city = localStorage.getItem("city");
 
-const cartElements = JSON.parse(localStorage.getItem("cart"));
+const cartStorage = JSON.parse(localStorage.getItem("cart"));
 
 
 let cartBlock = document.getElementById("cartBlock");
-cartElements.productsList.forEach(element => {
+cartStorage.productsList.forEach(element => {
 
     $.getJSON(url + "/restaurant/product/" + element.productId, {}, product => {
         let cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
+        cartItem.dataset.productId = product.id;
 
         let imageBlock = document.createElement("div");
         imageBlock.classList.add("cart-img");
@@ -51,8 +52,29 @@ cartElements.productsList.forEach(element => {
         let minus = document.createElement("div");
         minus.classList.add("minus");
         minus.innerText = "-";
-        minus.addEventListener("click", ()=> alert("-"));
-       // minus.setAttribute("onclick", "minus(this)");
+        minus.addEventListener("click", element=> {
+            let item = element.target.parentElement.parentElement;
+            let productId = item.dataset.productId;
+            let count = element.target.parentElement.querySelector(".number");
+            if (count.textContent > 1) {
+                count.textContent--;
+
+                cartStorage.productsList.forEach(function (element, index, array) {
+                    if (element.productId === productId) {
+                        array[index].count = count.textContent;
+                    }
+                });
+
+                item.querySelector(".cart-product-sum").textContent =
+                    (parseFloat(item.querySelector(".cart-product-price").textContent) * (+count.textContent))
+                        .toFixed(2) + " руб";
+
+            }
+
+
+
+            localStorage.setItem("cart", JSON.stringify(cartStorage));
+        });
 
         productCount.appendChild(minus);
 
@@ -65,16 +87,34 @@ cartElements.productsList.forEach(element => {
 
         let plus = document.createElement("div");
         plus.classList.add("plus");
-       //plus.setAttribute("onclick", "plus(this)");
         plus.innerText = "+";
-        plus.addEventListener("click", ()=> alert("+"));
+        plus.addEventListener("click", element => {
+            let item = element.target.parentElement.parentElement;
+            let productId = item.dataset.productId;
+            let count = element.target.parentElement.querySelector(".number");
+            if (count.textContent < 100) {
+                count.textContent++;
+
+                cartStorage.productsList.forEach(function (element, index, array) {
+                    if (element.productId === productId) {
+                        array[index].count = count.textContent;
+                    }
+                });
+
+                item.querySelector(".cart-product-sum").textContent =
+                    (parseFloat(item.querySelector(".cart-product-price").textContent) * (+count.textContent))
+                        .toFixed(2) + " руб";
+
+            }
+            localStorage.setItem("cart", JSON.stringify(cartStorage));
+        });
 
         productCount.appendChild(plus);
         cartItem.appendChild(productCount);
 
         let sum = document.createElement("div");
         sum.classList.add("cart-product-sum");
-        sum.innerText = product.price * element.count + " руб";
+        sum.innerText =(product.price * element.count).toFixed(2) + " руб";
 
         cartItem.appendChild(sum);
 
@@ -84,6 +124,16 @@ cartElements.productsList.forEach(element => {
         let a = document.createElement("a");
         a.href = "#";
         a.innerText = " Удалить";
+        a.addEventListener("click", event => {
+            let item = event.target.parentElement.parentElement;
+            let productId = item.dataset.productId;
+            item.remove();
+            cartStorage.productsList = cartStorage.productsList.filter(element => {
+                return element.productId !== productId;
+            });
+
+            localStorage.setItem("cart", JSON.stringify(cartStorage));
+        });
 
         deleteBlock.appendChild(a);
 
@@ -92,25 +142,4 @@ cartElements.productsList.forEach(element => {
 
     });
 
-
-
-    // <div className="cart-item">
-    //   =  <div className="cart-img">
-    //   =      <img src="<?php echo get_template_directory_uri(); ?>/img/restaurant-product.jpg"
-    //   =           alt="cart-image">
-    //   =  </div>
-    //   =  <div className="cart-product-features">
-    //   =      <div className="cart-product-title">Бургер Биг</div>
-    //   =      <div className="cart-product-weight">170 <span>г</span></div>
-    //   =  </div>
-    //   =  <div className="cart-product-price">68 <span>руб</span></div>
-    //   =  <div className="add-product cart-product-count">
-    //   =      <div className="minus">–</div>
-    //   =      <div className="add-product-count number">1</div>
-    //   =      <div className="plus">+</div>
-    //   =  </div>
-    //   =  <div className="cart-product-sum">200 руб</div>
-    //   =  <div className="cart-product-delete"><a href="#"> Удалить</a></div>
-    //
-    // </div>
 });

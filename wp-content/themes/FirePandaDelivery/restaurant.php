@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <main>
     <?php
-    $var = json_decode(wp_remote_get("https://fire-panda-delivery.herokuapp.com/restaurant/exist/" . $_GET["id"])['body'], true)["value"];
+    include_once
+    $var = json_decode(wp_remote_get("http://localhost:8070/restaurant/exist/" . $_GET["id"])['body'], true)["value"];
 
     if ($var != null && $var == 1) {
     ?>
@@ -282,6 +283,7 @@
     <?php
 
     } else {
+        echo "усе пошло не по плану";
         // если такого ресторана нет
     }
 
